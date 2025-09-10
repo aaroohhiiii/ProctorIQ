@@ -6,7 +6,7 @@ from pinecone.grpc import PineconeGRPC as Pinecone
 from pinecone import ServerlessSpec
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import JSONLoader, PyPDFLoader, DirectoryLoader
+from langchain_community.document_loaders import TextLoader, DirectoryLoader
 from langchain_community.docstore.document import Document
 from langchain_pinecone import PineconeVectorStore
 from loguru import logger
@@ -23,10 +23,9 @@ class VectorStoreManager:
         self.index_name = "ProctorIQ"
         self.embedding_model = "sentence-transformers/all-MiniLM-L6-v2"
         self.dimension = 384
-        self.chunk_size = 500
-        self.chunk_overlap = 50
-        self.data_dir= "exam_automator\backend\docs"
-        # self.data_dir = Path(__file__).parent.parent / "data/raw/cloudnine_scraped"
+        self.chunk_size = 1000  # Increased for exam content
+        self.chunk_overlap = 100  # Increased overlap for better context
+        self.data_dir = Path(__file__).parent.parent / "docs"  # Points to exam_automator/backend/docs
 
         self.embeddings = self.load_embeddings()
         self.pinecone = Pinecone(api_key=PINECONE_API_KEY)
@@ -58,45 +57,66 @@ class VectorStoreManager:
             return None
 
     def load_all_documents(self) -> List[Document]:
+        """Load all exam-related documents from the docs directory"""
         all_docs = []
 
-        document_types = {
-            # "departments.json": {"type": "department", "priority": "high"},
-            # "doctors.json": {"type": "doctor", "priority": "high"},
-            # "faqs.json": {"type": "faq", "priority": "medium"},
-            # "services.json": {"type": "service", "priority": "high"},
-            # "dummy_dialogs.json": {"type": "dialog", "priority": "medium"}
-        }
-
         try:
-            for file, metadata in document_types.items():
-                file_path = self.data_dir / file
-                if file_path.exists():
-                    loader = JSONLoader(
-                        file_path=str(file_path),
-                        jq_schema=".",
-                        text_content=False  # Important fix!
-                    )
-                    docs = loader.load()
-                    for doc in docs:
-                        doc.metadata.update(metadata)
-                    all_docs.extend(docs)
-                    logger.info(f"✅ Loaded {file} ({len(docs)} docs)")
-                    
+            # Define document types for exam automation
+            document_patterns = {
+                "SQP*.txt": {"type": "question_paper", "priority": "high"},
+                "MS*.txt": {"type": "marking_scheme", "priority": "high"},
+                "Student_Answer_Paper*.txt": {"type": "student_answer", "priority": "medium"},
+            }
 
-            # Load PDFs from guidelines folder
-            guideline_dir = self.data_dir / "guidelines"
-            if guideline_dir.exists():
-                loader = DirectoryLoader(
-                    str(guideline_dir),
-                    glob="*.pdf",
-                    loader_cls=PyPDFLoader
-                )
-                docs = loader.load()
-                for doc in docs:
-                    doc.metadata.update({"type": "medical_guideline", "priority": "medium"})
-                all_docs.extend(docs)
-                logger.info(f"📘 Loaded {len(docs)} pages from guidelines")
+            for pattern, metadata in document_patterns.items():
+                # Use glob to find files matching the pattern
+                files = list(self.data_dir.glob(pattern))
+                
+                for file_path in files:
+                    if file_path.exists() and file_path.is_file():
+                        try:
+                            loader = TextLoader(str(file_path), encoding='utf-8')
+                            docs = loader.load()
+                            
+                            # Add specific metadata based on filename
+                            for doc in docs:
+                                doc.metadata.update(metadata)
+                                doc.metadata["filename"] = file_path.name
+                                doc.metadata["file_path"] = str(file_path)
+                                
+                                # Extract paper number from filename
+                                if "SQP" in file_path.name:
+                                    paper_num = file_path.name.replace("SQP", "").replace(".txt", "")
+                                    doc.metadata["paper_number"] = paper_num
+                                elif "MS" in file_path.name:
+                                    paper_num = file_path.name.replace("MS", "").replace(".txt", "")
+                                    doc.metadata["paper_number"] = paper_num
+                                elif "Student_Answer_Paper" in file_path.name:
+                                    # Extract paper and variation info
+                                    parts = file_path.name.replace("Student_Answer_Paper", "").replace(".txt", "").split("_")
+                                    if len(parts) >= 2:
+                                        doc.metadata["paper_number"] = parts[0]
+                                        doc.metadata["variation"] = parts[1]
+                            
+                            all_docs.extend(docs)
+                            logger.info(f"✅ Loaded {file_path.name} ({len(docs)} docs)")
+                            
+                        except Exception as e:
+                            logger.error(f"❌ Failed to load {file_path.name}: {e}")
+
+            # Log summary
+            if all_docs:
+                doc_types = {}
+                for doc in all_docs:
+                    doc_type = doc.metadata.get("type", "unknown")
+                    doc_types[doc_type] = doc_types.get(doc_type, 0) + 1
+                
+                logger.info(f"📚 Total documents loaded: {len(all_docs)}")
+                for doc_type, count in doc_types.items():
+                    logger.info(f"  - {doc_type}: {count} documents")
+            else:
+                logger.warning("⚠️ No documents found in the docs directory")
+                
         except Exception as e:
             logger.error(f"❌ Failed to load documents: {e}")
             return []
@@ -132,14 +152,14 @@ class VectorStoreManager:
             logger.error(f"❌ Error setting up vector store: {e}")
             return False
 
-    def query_vector_store(self, query: str, k: int = 3, filters: Optional[Dict] = None) -> List[Document]:
+    def query_vector_store(self, query: str, k: int = 3, filters: Optional[Dict[str, str]] = None) -> List[Document]:
         """Query the vector store for relevant documents"""
         try:
             if not self.vector_store:
                 logger.error("❌ Vector store not initialized")
                 return []
 
-            search_kwargs = {"k": k}
+            search_kwargs: Dict[str, Any] = {"k": k}
             if filters:
                 search_kwargs["filter"] = filters
 
@@ -153,11 +173,80 @@ class VectorStoreManager:
             logger.error(f"❌ Error querying vector store: {e}")
             return []
 
+    def get_question_paper(self, paper_number: str) -> List[Document]:
+        """Retrieve a specific question paper"""
+        return self.query_vector_store(
+            query="question paper",
+            filters={"type": "question_paper", "paper_number": paper_number}
+        )
+
+    def get_marking_scheme(self, paper_number: str) -> List[Document]:
+        """Retrieve marking scheme for a specific paper"""
+        return self.query_vector_store(
+            query="marking scheme",
+            filters={"type": "marking_scheme", "paper_number": paper_number}
+        )
+
+    def get_student_answers(self, paper_number: str, variation: Optional[str] = None) -> List[Document]:
+        """Retrieve student answer sheets"""
+        filters = {"type": "student_answer", "paper_number": paper_number}
+        if variation:
+            filters["variation"] = variation
+        
+        return self.query_vector_store(
+            query="student answer",
+            filters=filters
+        )
+
+    def search_relevant_context(self, question: str, paper_number: Optional[str] = None) -> List[Document]:
+        """Search for relevant context for question evaluation"""
+        filters = {}
+        if paper_number:
+            filters["paper_number"] = paper_number
+        
+        return self.query_vector_store(
+            query=question,
+            k=5,
+            filters=filters if filters else None
+        )
+
 
 if __name__ == "__main__":
+    # Initialize the vector store manager
     manager = VectorStoreManager()
+    
+    # Setup vector store with exam documents
+    logger.info("🚀 Setting up ProctorIQ Vector Store...")
     success = manager.setup_vector_store()
+    
     if success:
         print("✅ Vector store setup completed successfully.")
+        
+        # Test queries
+        print("\n🔍 Testing vector store queries...")
+        
+        # Test getting question paper
+        qp_docs = manager.get_question_paper("1")
+        print(f"📄 Found {len(qp_docs)} question paper documents for Paper 1")
+        
+        # Test getting marking scheme
+        ms_docs = manager.get_marking_scheme("1")
+        print(f"📋 Found {len(ms_docs)} marking scheme documents for Paper 1")
+        
+        # Test getting student answers
+        sa_docs = manager.get_student_answers("1", "Variation1")
+        print(f"✍️ Found {len(sa_docs)} student answer documents for Paper 1 Variation 1")
+        
+        # Test context search
+        context_docs = manager.search_relevant_context(
+            "What textual evidence tells us that Pip was trembling?",
+            paper_number="1"
+        )
+        print(f"🔎 Found {len(context_docs)} relevant context documents")
+        
     else:
         print("❌ Vector store setup failed.")
+        print("💡 Make sure:")
+        print("  - PINECONE_API_KEY is set in your .env file")
+        print("  - Internet connection is available")
+        print("  - Documents exist in the docs directory")
