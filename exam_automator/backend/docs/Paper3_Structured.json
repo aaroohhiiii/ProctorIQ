@@ -1,0 +1,627 @@
+{
+  "paper_info": {
+    "paper_id": "3",
+    "title": "English Core Paper 3",
+    "class": "XII", 
+    "subject": "English Core",
+    "code": "301",
+    "max_marks": 80,
+    "time_allowed": "3 Hours",
+    "total_questions": 13,
+    "academic_session": "2023-24"
+  },
+  "instructions": {
+    "general": [
+      "The Question Paper contains THREE sections-READING, WRITING and LITERATURE.",
+      "Attempt questions based on specific instructions for each part."
+    ]
+  },
+  "sections": {
+    "section_a": {
+      "title": "Reading Skills",
+      "marks": 22,
+      "questions": {
+        "question_1": {
+          "id": "1",
+          "marks": 12,
+          "type": "fiction_passage",
+          "passage": {
+            "title": "The Hitchhiker's Guide to the Galaxy by Douglas Adams",
+            "word_count": 444,
+            "content": "Arthur lay in his cabin, still trying to piece together the events of the last few hours. He had watched his home planet of Earth be demolished to make way for a hyperspace bypass, been saved by his friend Ford, and then whisked away on a ship that was powered by an 'infinite improbability drive.' It was all too much for him.\n\nJust then, Ford stuck his head around the door.\n'Hey, Earthman,' he said, 'come and have a look at this.'\n\nArthur stumbled after him down a corridor and into the ship's control room. He gazed in amazement at the banks of controls and flashing lights. In the center of the room was a large console covered in buttons and switches, and in the middle of the console was a small, white mouse.\n\n'What's that?' asked Arthur.\n'That's the ship's computer,' said Ford.\nArthur stared at the mouse. 'That's a computer?' he said.\n'Yup,' said Ford. 'Five-dimensional, biologically-based, super intelligent, and in the form of a white lab mouse. Pretty neat, huh?'\n\n'I don't know,' said Arthur. 'I don't think I really understand anything anymore. Why is a mouse the ship's computer?'\n\n'It's a long story,' said Ford. 'But the short version is that the mice built the Earth as a giant computer to figure out the Ultimate Question of Life, the Universe, and Everything. Then they ran out of money and had to destroy it to make way for a hyperspace bypass. So now they're using the Heart of Gold to finish the calculation.'\n\nArthur was about to say something, but at that moment the ship's intercom crackled to life.\n'Good evening, Heart of Gold,' said a smooth, computerized voice. 'This is Eddie, your shipboard computer. I'm feeling a bit depressed today. Would you like me to sing you a song?'\n\n'Oh, not again,' groaned Ford.\n'Eddie, would you mind shutting up?' said Arthur.\n\nArthur sighed and leaned back against the console, trying to make sense of everything. But as he closed his eyes, he heard a voice inside his head.\n'Hello?' it said.\nArthur jumped, startled. 'Who's there?' he said.\n'It's me,' said the voice. 'Marvin.'\n'Marvin?' said Arthur. 'Who's Marvin?'\n'The Paranoid Android,' said the voice.\n\nArthur looked around, but he didn't see anyone. 'Where are you?' he said.\n'I'm down here,' said the voice.\n\nArthur looked down and saw a small, metal figure shuffling across the floor. It was about three feet tall, with a round head and a body that looked like it had been cobbled together from spare parts. Its eyes were a dull red, and its voice was a monotone.\n\n'I've been waiting for someone to talk to me for over two million years,' said Marvin."
+          },
+          "sub_questions": {
+            "i": {
+              "question": "Select the option that classifies Arthur's confusion about drastic events such as the destruction of his home planet and the introduction of new technologies, correctly.",
+              "options": {
+                "A": "Routine and boredom",
+                "B": "Adventure and excitement", 
+                "C": "Loss and change",
+                "D": "Calm and relaxation"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "C",
+              "explanation": "C. Loss and change",
+              "detailed_explanation": "Destruction of his home planet = loss and the introduction of new technologies = change",
+              "marking_criteria": {
+                "full_marks": "Only option C selected",
+                "no_marks": "Any other option selected",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "ii": {
+              "question": "What is the significance of the white lab mouse in the control room of the Heart of Gold spaceship?",
+              "options": {
+                "A": "It is the captain of the ship",
+                "B": "It serves as the ship's computer",
+                "C": "It is a pet of the crew",
+                "D": "It is used for scientific experiments"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "B",
+              "explanation": "B. It serves as the ship's computer",
+              "detailed_explanation": "It is mentioned in the text that the white lab mouse in the control room of the Heart of Gold spaceship is the ship's computer.",
+              "marking_criteria": {
+                "full_marks": "Only option B selected",
+                "no_marks": "Any other option selected",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "iii": {
+              "question": "Share evidence from the text, in about 40 words to support the view that the writer's writing style is descriptive and humourous.",
+              "marks": 2,
+              "type": "textual_analysis",
+              "answer": "Descriptive: 'In the center of the room was a large console covered in buttons and switches, and in the middle of the console was a small, white mouse.' This description provides a clear image of the setting and the unconventional form of the ship's computer. Humorous: 'Oh, not again,' groaned Ford. This line is humorous because it suggests that the ship's computer, Eddie, frequently offers to sing songs and annoy the crew. Ford's reaction of groaning implies that this is a common occurrence and that he's tired of it. The humour comes from the fact that a computer is attempting to sing a song, which is an unexpected and absurd situation.",
+              "marking_criteria": {
+                "2_marks": "Correct identification of both descriptive and humorous elements with appropriate examples",
+                "1_mark": "Correct identification of either descriptive OR humorous element with example",
+                "0_marks": "Incorrect or no examples",
+                "note": "Accept any other appropriate example identified from the text"
+              }
+            },
+            "iv": {
+              "question": "Complete the sentence appropriately with a characteristic or its description. Based on the information given in the excerpt, one can infer that the mice who built the Earth are ______.",
+              "marks": 1,
+              "type": "inference",
+              "answer": "highly intelligent / technologically advanced [they built the Earth as a giant computer] OR indifferent to the suffering of other beings [they ran out of money and had to destroy the Earth to make way for a hyperspace bypass]",
+              "explanation": "The mice built Earth as a giant computer to solve the Ultimate Question of Life, showing advanced intelligence.",
+              "marking_criteria": {
+                "acceptable_answers": [
+                  "highly intelligent",
+                  "technologically advanced", 
+                  "indifferent to suffering of other beings"
+                ],
+                "justification_required": "Based on building Earth as computer or destroying it for bypass",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "v": {
+              "question": "Select the option that is similar in meaning to Ford's expression, 'Pretty neat, huh?'",
+              "options": {
+                "A": "Easy, isn't it?",
+                "B": "Could be worse, no?",
+                "C": "Impressive, yes?",
+                "D": "Too difficult for you?"
+              },
+              "marks": 1,
+              "type": "vocabulary",
+              "answer": "C",
+              "explanation": "C. Impressive, yes?",
+              "marking_criteria": {
+                "full_marks": "Only option C selected",
+                "no_marks": "Any other option selected",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "vi": {
+              "question": "Explain, in about 40 words, why the name 'The Paranoid Android' is considered ironic.",
+              "marks": 2,
+              "type": "literary_device",
+              "answer": "The name 'The Paranoid Android' is ironic because it is unexpected for a robot to exhibit human-like emotions such as paranoia. Robots are often thought of as logical and unemotional, whereas the name 'paranoid' implies irrational fear and anxiety. It plays with readers' expectations and stereotypes of robots.",
+              "explanation": "Irony comes from the contradiction between expected android behavior and Marvin's emotional personality.",
+              "marking_criteria": {
+                "2_marks": "Correct interpretation and complete explanation of irony",
+                "1_mark": "Partial credit for partially addressing the question",
+                "0_marks": "Incorrect interpretation",
+                "no_half_credit": "No ½ credit given"
+              }
+            },
+            "vii": {
+              "question": "In the line, '…a body that looked like it had been cobbled together from spare parts…', what comparison does the word 'cobbled' refer to?",
+              "marks": 1,
+              "type": "vocabulary_context",
+              "answer": "The comparison is with cobblers, who take scraps of leather and stitch them together to create a shoe, in the same way in which the body of Marvin was put together or 'cobbled', using spare parts.",
+              "explanation": "The word 'cobbled' here, implies a sense of roughness and unevenness, as if the body has been put together in a haphazard manner. It also suggests that the body is assembled together, rather than being a cohesive whole.",
+              "marking_criteria": {
+                "full_marks": "Correct explanation of cobbler comparison",
+                "no_marks": "Incorrect explanation",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "viii": {
+              "question": "How does the following impact the reader, even though they know Marvin is just an android? 'I've been waiting for someone to talk to me for over two million years,' said Marvin. Answer in about 40 words.",
+              "marks": 2,
+              "type": "emotional_impact",
+              "answer": "The statement by Marvin, despite being an android, humanizes the character by evoking a sense of loneliness and isolation that is relatable to the reader. It also emphasizes the theme of the alienation and lack of communication between beings in the vastness of space. This creates a sense of sympathy towards Marvin and also raises questions about the meaning and value of existence, regardless of whether one is organic or synthetic.",
+              "explanation": "The statement humanizes Marvin, creating emotional connection despite his artificial nature.",
+              "marking_criteria": {
+                "2_marks": "Correct interpretation and complete explanation of emotional impact",
+                "1_mark": "Partial credit for partially addressing the question", 
+                "0_marks": "Incorrect interpretation",
+                "no_half_credit": "No ½ credit given"
+              }
+            },
+            "ix": {
+              "question": "Which of the following options correctly identifies the main themes explored in the extract?",
+              "options": {
+                "A": "(a) Exploration of consciousness in artificial beings",
+                "B": "(b), (c) and (d)",
+                "C": "(a), (b) and (e)",
+                "D": "All of the above"
+              },
+              "marks": 1,
+              "type": "thematic_analysis",
+              "answer": "B",
+              "explanation": "B. (b) (c) and (d)",
+              "detailed_explanation": "(a) accurate -represents the main focus of the excerpt: Marvin, a depressed and paranoid android who precedes humanity; (b) incorrect- downplaying serious implications and though the passage does contain humorous elements, it also deals with weighty topics such as the destruction of Earth and the search for a new home; (c) incorrect- no mention of aliens ; (d) incorrect- there is no mention of time travel in the excerpt. The technologies mentioned, such as the Heart of Gold spaceship and the Infinite Improbability Drive, are related to time travel; (e) correct- there is mention of a new technology, the Infinite Improbability Drive, that allowed for Arthur's quick travel across galaxies in a spaceship",
+              "marking_criteria": {
+                "full_marks": "Only option B selected",
+                "no_marks": "Any other option selected",
+                "partial_credit": "No partial credit"
+              }
+            }
+          }
+        },
+        "question_2": {
+          "id": "2",
+          "marks": 10,
+          "type": "data_interpretation",
+          "passage": {
+            "title": "Young Adult Travel Preferences Survey",
+            "content": "Survey data on travel preferences and behaviors among young adults in India, focusing on solo vs group travel patterns, accommodation choices, and motivating factors for travel decisions...",
+            "charts_tables": ["Solo vs Group travel preferences", "Accommodation type preferences", "Primary motivating factors for travel"]
+          },
+          "sub_questions": {
+            "i": {
+              "question": "List any TWO ways this survey can be useful for the travel industry. (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical",
+              "answer": "(Any 2 relevant): Help travel companies to tailor their services to meet the preferences and expectations of young adult travellers, leading to increased customer satisfaction and loyalty. Provide insights for the development of new travel packages and itineraries that cater to the specific needs and interests of young adult travellers. Enable the tourism industry to better understand the changing preferences and behaviours of young adult travellers, which can inform future marketing and promotional strategies. Can help policymakers and tourism boards to identify key trends and areas of growth in the tourism sector, and plan accordingly. Allow researchers to gain a better understanding of the motivations and travel behaviours of young adults, which can inform academic studies and literature in the field. Can provide a benchmark for comparison with similar studies conducted in different regions or countries, helping to identify cross-cultural differences in travel preferences. Help young adults themselves to gain a better understanding of their own travel preferences and motivations, and make more informed travel decisions in the future. Can highlight the importance of certain factors in the decision-making process for young adult travellers, such as budget, safety, and cultural exploration, which can inform discussions and debates around the future of the tourism industry.",
+              "marking_criteria": {
+                "2_marks": "Full credit for two relevant ways",
+                "1_mark": "Partial credit for one relevant way",
+                "0_marks": "No relevant ways mentioned",
+                "no_half_credit": "No ½ credit given"
+              }
+            },
+            "ii": {
+              "question": "What is the primary motivating factor for group travel according to the survey?",
+              "options": {
+                "A": "Cost sharing and budget management",
+                "B": "Safety and security concerns", 
+                "C": "Organized transportation facilities",
+                "D": "Desire for making new friends"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "D",
+              "explanation": "D. Desire for making new friends",
+              "marking_criteria": {
+                "full_marks": "Only option D selected",
+                "no_marks": "Any other option selected",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "iii": {
+              "question": "What do the top choices in the survey reveal about young adult travel preferences?",
+              "marks": 1,
+              "type": "interpretation",
+              "answer": "The top choices in the survey, for traveling solo and in a group suggest that young adult travellers value independence and freedom when traveling alone and when traveling in a group, they value socializing and making new friends.",
+              "marking_criteria": {
+                "full_marks": "Answer covering both solo (independence/freedom) and group (socializing/friends) preferences",
+                "no_marks": "Incomplete or incorrect interpretation",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "iv": {
+              "question": "Based on the survey data, which traveler profile best matches budget-friendly solo travel preferences?",
+              "options": {
+                "A": "Priya - group traveller focused on organized transport",
+                "B": "Nawaz - solo traveller prioritizing budget-friendly options",
+                "C": "Ravi - group traveller with high focus on safety and security"
+              },
+              "marks": 1,
+              "type": "matching",
+              "answer": "B",
+              "explanation": "(b) Nawaz - solo traveller prioritizing budget-friendly options",
+              "detailed_explanation": "solo traveller-budget friendly; (a) group traveller- organised transport; (c) group traveller- high focus on safety and security",
+              "marking_criteria": {
+                "full_marks": "Only option B selected",
+                "no_marks": "Any other option selected", 
+                "partial_credit": "No partial credit"
+              }
+            },
+            "v": {
+              "question": "Which activity is most likely to help young adults discover more about themselves during travel?",
+              "options": {
+                "A": "Trying new cuisine",
+                "B": "Visiting historical monuments",
+                "C": "Shopping for local goods",
+                "D": "Taking photographs"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "A",
+              "explanation": "A. trying new cuisine",
+              "detailed_explanation": "It allows an individual to explore new flavours and ingredients that they may not have been exposed to before, thus helping them discover more about themselves by way of likes/ dislikes",
+              "marking_criteria": {
+                "full_marks": "Only option A selected",
+                "no_marks": "Any other option selected",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "vi": {
+              "question": "How should the travel industry adapt to cater to both solo and group travelers based on survey findings? (Answer in about 40 words)",
+              "marks": 2,
+              "type": "application",
+              "answer": "To cater to budget-conscious solo travellers, the industry may need to provide more affordable accommodation options such as hostels and budget hotels. For group travellers, the industry may need to focus on offering more luxury accommodations and experiences that cater to their desire for comfort and convenience.",
+              "marking_criteria": {
+                "2_marks": "Full credit when correct response for both solo and group travelers is stated",
+                "1_mark": "Partial credit when correct response for either solo OR group travelers is stated",
+                "0_marks": "Incorrect or incomplete response",
+                "no_half_credit": "No credit of ½"
+              }
+            },
+            "vii": {
+              "question": "What common characteristic do both solo and group young adult travelers share according to the survey?",
+              "marks": 1,
+              "type": "commonality",
+              "answer": "(Any one) a shared desire for adventure / a willingness to step outside of their comfort zones / the fact that young adults in India are becoming more interested in cultural exchange and global understanding",
+              "marking_criteria": {
+                "acceptable_answers": [
+                  "shared desire for adventure",
+                  "willingness to step outside comfort zones", 
+                  "interest in cultural exchange and global understanding"
+                ],
+                "requirement": "Any one relevant characteristic",
+                "partial_credit": "No partial credit"
+              }
+            },
+            "viii": {
+              "question": "True or False: This survey primarily focuses on the growing solo travel trend in India.",
+              "marks": 1,
+              "type": "true_false",
+              "answer": "FALSE",
+              "explanation": "The passage is not about solo travel trend but more of solo vs group travel debate among young adults in India",
+              "marking_criteria": {
+                "full_marks": "FALSE selected with correct reasoning",
+                "no_marks": "TRUE selected or incorrect reasoning",
+                "partial_credit": "No partial credit"
+              }
+            }
+          }
+        }
+      }
+    },
+    "section_b": {
+      "title": "Writing Skills",
+      "marks": 18,
+      "note": "All names and addresses of places and organisations used, are fictitious",
+      "questions": {
+        "question_3": {
+          "id": "3",
+          "marks": 4,
+          "type": "notice_writing",
+          "word_limit": 50,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "scenario": "Notice about lost library book and fine policy",
+              "requirements": [
+                "Correct format (as listed)",
+                "Drawing attention—students of XI-XII",
+                "Mentioning the event", 
+                "Giving details -D,T,V (Date, Time, Venue)",
+                "Inviting applications",
+                "Line with reference to the undersigned"
+              ]
+            },
+            "B": {
+              "scenario": "Notice about upcoming science exhibition",
+              "requirements": [
+                "Correct format (as listed)",
+                "Drawing attention—residents",
+                "Stating the information",
+                "Giving details",
+                "Sharing awaited news", 
+                "Line with reference to the undersigned"
+              ]
+            }
+          }
+        },
+        "question_4": {
+          "id": "4",
+          "marks": 4,
+          "type": "invitation_writing", 
+          "word_limit": 50,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "scenario": "Invitation to graduation ceremony"
+            },
+            "B": {
+              "scenario": "Invitation to charity fundraiser"
+            }
+          }
+        },
+        "question_5": {
+          "id": "5",
+          "marks": 5,
+          "type": "letter_writing",
+          "word_limit": 120,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "organisation": 1,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "scenario": "Letter to local authority about poor road conditions"
+            },
+            "B": {
+              "scenario": "Letter to friend describing college life"
+            }
+          }
+        },
+        "question_6": {
+          "id": "6", 
+          "marks": 5,
+          "type": "article_writing",
+          "word_limit": 120,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "organisation": 1,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "scenario": "Article on 'Digital Detox: Need of the Hour'"
+            },
+            "B": {
+              "scenario": "Article on 'Importance of Mental Health Awareness'"
+            }
+          }
+        }
+      }
+    },
+    "section_c": {
+      "title": "Literature",
+      "marks": 40,
+      "note": "No partial credit of ½, unless indicated",
+      "questions": {
+        "question_7": {
+          "id": "7",
+          "marks": 6,
+          "type": "poetry_analysis",
+          "instruction": "Read the following extracts and answer the questions for any one of the given two, (A) or (B)",
+          "options": {
+            "A": {
+              "poem": "A Thing of Beauty",
+              "extract": "Therefore, on every morrow, are we wreathing A flowery band to bind us to the earth, Spite of despondence, of the inhuman dearth Of noble natures, of the gloomy days, Of all the unhealthy and o'er-darkened ways Made for our searching: yes, in spite of all, Some shape of beauty moves away the pall From our dark spirits.",
+              "sub_questions": {
+                "i": {
+                  "question": "What is the main theme of this extract?",
+                  "options": {
+                    "A": "The power of nature to heal",
+                    "B": "The struggle between good and evil", 
+                    "C": "The immortality of art and literature",
+                    "D": "The importance of human relationships"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "C",
+                  "explanation": "C. The immortality of art and literature",
+                  "detailed_explanation": "The extract emphasizes the idea that the tales of the mighty dead are an 'endless fountain of immortal drink' that pour down to us from the heavens, suggesting that these stories and legends are timeless and will never truly die. This theme speaks to the enduring power of art and literature to transcend time and space and to continue to inspire and move people long after their creators have passed away."
+                },
+                "ii": {
+                  "question": "True or False: The 'mighty dead' are called mighty because of the power they exerted over people.",
+                  "marks": 1,
+                  "type": "true_false",
+                  "answer": "FALSE",
+                  "explanation": "The dead are referred to as 'mighty' in the poem because they have achieved greatness in their lifetime. They may have contributed to society in a significant way or achieved great things in their respective fields. It is not about the power they exerted on the people. By referring to them as 'mighty,' the poet emphasizes their importance and the positive impact or influence they have had on the world."
+                },
+                "iii": {
+                  "question": "Explain the metaphor of 'endless fountain of immortal drink'.",
+                  "marks": 1,
+                  "type": "metaphor_analysis",
+                  "answer": "just as a fountain constantly pours forth water, the tales of the mighty dead pour forth endless inspiration and wisdom for the living",
+                  "explanation": "The term 'immortal drink' suggests that the stories are never-ending and that they have the power to nourish and sustain us in much the same way that water does."
+                },
+                "iv": {
+                  "question": "What does the word 'brink' suggest in the context of the poem?",
+                  "marks": 1,
+                  "type": "word_analysis",
+                  "answer": "abundance",
+                  "explanation": "The use of the word 'brink' in the poem suggests that the immortality that is being poured onto us is on the verge of overflowing. This powerful image suggests that the beauty and grandeur of the dooms are so great that they are overflowing from heaven. This image of abundance reinforces the idea that the beauty and grandeur of the dooms are endless and that there is an infinite supply of it."
+                },
+                "v": {
+                  "question": "What word rhymes with 'dooms' in this extract?",
+                  "marks": 1,
+                  "type": "rhyme_identification",
+                  "answer": "tombs",
+                  "explanation": "rhymes with dooms, which is the last word of line 1"
+                },
+                "vi": {
+                  "question": "What effect does the lack of punctuation at the end of the first line create?",
+                  "options": {
+                    "A": "Creates confusion for the reader",
+                    "B": "Emphasizes the finality of the statement",
+                    "C": "Shows the poet's carelessness",
+                    "D": "Creates a sense of anticipation and expectation for the reader"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "D",
+                  "explanation": "D. Creates a sense of anticipation and expectation for the reader",
+                  "detailed_explanation": "the lack of punctuation at the end of the first line has a subtle yet significant impact on the poem, creating a sense of flow and continuity while also building anticipation and engaging the reader's imagination."
+                }
+              }
+            },
+            "B": {
+              "poem": "My Mother at Sixty-six",
+              "extract": "I looked again at her, wan, pale as a late winter's moon and felt that old familiar ache, my childhood's fear, but all I said was, see you soon, Amma, all I did was smile and smile and smile…",
+              "sub_questions": {
+                "i": {
+                  "question": "How does the speaker feel when looking at her mother?",
+                  "options": {
+                    "A": "Happy and content",
+                    "B": "Angry and frustrated", 
+                    "C": "Indifferent and detached",
+                    "D": "Fearful and apprehensive"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "D",
+                  "explanation": "D. Fearful and apprehensive",
+                  "detailed_explanation": "The speaker mentions feeling an 'old familiar ache' and 'childhood's fear' when looking at her mother. This suggests a sense of fear or apprehension that is rooted in the speaker's past experiences with her mother."
+                },
+                "ii": {
+                  "question": "What does the contrast between what the speaker feels and what she says/does reveal?",
+                  "marks": 1,
+                  "type": "contrast_analysis",
+                  "answer": "It suggests a contrast between the speaker's internal emotional response and her outward behaviour"
+                },
+                "iii": {
+                  "question": "What quality does the speaker show by hiding her true feelings?",
+                  "options": {
+                    "A": "Dishonesty",
+                    "B": "Sensitivity",
+                    "C": "Weakness", 
+                    "D": "Selfishness"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "B",
+                  "explanation": "B. sensitivity"
+                },
+                "iv": {
+                  "question": "True or False: Both 'wan, pale' and 'smile and smile and smile' use the same literary device.",
+                  "marks": 1,
+                  "type": "true_false",
+                  "answer": "FALSE",
+                  "explanation": "the poem's line holds a simile/metaphor whereas the other line is an example of alliteration - w sound"
+                },
+                "v": {
+                  "question": "What universal message does this poem convey?",
+                  "marks": 1,
+                  "type": "thematic_analysis",
+                  "answer": "The poem highlights the importance of cherishing and appreciating the people we love, while we still can",
+                  "explanation": "quality time -life is transient and similar"
+                },
+                "vi": {
+                  "question": "What does the repetition of 'smile' suggest about the speaker's emotional state?",
+                  "marks": 1,
+                  "type": "repetition_analysis",
+                  "answer": "the speaker is trying to hold back her emotions and remain composed, despite the pain she feels at parting from her mother"
+                }
+              }
+            }
+          }
+        },
+        "question_8": {
+          "id": "8",
+          "marks": 4,
+          "type": "prose_analysis",
+          "instruction": "Read the following extracts and answer the questions for any one of the given two, (A) or (B)",
+          "note": "No partial credit of ½, unless indicated",
+          "options": {
+            "A": {
+              "story": "Journey to the End of the Earth",
+              "extract": "Antarctica is the perfect place to study how little changes in the environment can have big consequences elsewhere. This is because Antarctica doesn't have a human population, so it's like a pristine place on Earth.",
+              "sub_questions": {
+                "i": {
+                  "question": "Why is Antarctica considered an important reference point for understanding environmental changes?",
+                  "marks": 1,
+                  "type": "comprehension",
+                  "answer": "This makes it an important reference point for understanding the effects of human activities on the environment and the potential impacts of climate change",
+                  "explanation": "The absence of a human population in Antarctica means that the region is relatively pristine and has not been subject to the same levels of human impact as other areas of the world"
+                },
+                "ii": {
+                  "question": "What does the extract suggest about scientific perspectives on climate change?",
+                  "options": {
+                    "A": "There is universal agreement on climate causes",
+                    "B": "Scientists avoid studying climate change",
+                    "C": "are differing views on the causes and implications of climate change",
+                    "D": "Climate change is not a serious concern"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "C",
+                  "explanation": "C. are differing views on the causes and implications of climate change"
+                },
+                "iii": {
+                  "question": "Explain the comparison of carbon records to a 'time machine'.",
+                  "marks": 1,
+                  "type": "comparison_analysis",
+                  "answer": "just like a time machine would allow us to observe past events, carbon records allow us to observe past climate conditions",
+                  "explanation": "Carbon records allow us to study past climates by analysing the air bubbles trapped in ice cores. They provide a glimpse into the Earth's atmospheric conditions at the time the ice was formed and can help scientists understand how the climate has changed over time"
+                },
+                "iv": {
+                  "question": "Why can this extract be considered informative writing? (Any one reason)",
+                  "marks": 1,
+                  "type": "genre_analysis",
+                  "answer": "(Any one) because the writer presents information in a straightforward and objective manner / because the writer applies a third-person point of view and avoids the use of personal opinion or emotional language / because the writer uses a logical structure to present their argument (starting with the importance of Antarctica as a relatively pristine location, and then moving on to explain the significance of the ice cores and carbon records found there)"
+                }
+              }
+            },
+            "B": {
+              "story": "The Tiger King",
+              "extract": "When the astrologers came to foretell the future of the ten-day-old prince, they were taken aback. They shuffled their feet and looked at each other with uncertainty before delivering their prophecy.",
+              "sub_questions": {
+                "i": {
+                  "question": "Why do you think the author describes the astrologers' physical reactions before delivering the prophecy? (Any one reason)",
+                  "marks": 1,
+                  "type": "literary_technique",
+                  "answer": "(Any one) create a sense of approaching doom / use it as a tool to heighten the reader's curiosity and interest in the story"
+                },
+                "ii": {
+                  "question": "What emotion do the astrologers' actions (shuffling feet, looking at each other) primarily convey?",
+                  "options": {
+                    "A": "Excitement",
+                    "B": "Confidence",
+                    "C": "Disbelief",
+                    "D": "Unease"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "D",
+                  "explanation": "D. Unease",
+                  "detailed_explanation": "The use of this physical gesture indicates a sense of discomfort or unease, and implies that the astrologers were reluctant to reveal the prophecy. Humiliation or grief would be more strongly expressed in the text if they were the emotions being conveyed. Disbelief is also not the correct answer, as there is no indication that the astrologers doubted their prediction."
+                },
+                "iii": {
+                  "question": "What quality do the astrologers predict the prince will possess?",
+                  "marks": 1,
+                  "type": "prediction_analysis",
+                  "answer": "bravery/ heroism / leadership",
+                  "explanation": "The astrologers are predicting that the child born under this star will be a great warrior and a champion, implying that the child will display exceptional courage and bravery in battle or in other challenges. This also suggests that the child will be a leader and will inspire others with their bravery and heroism. The use of these superlative phrases further emphasizes the astrologers' admiration for this trait and the importance they place on it in predicting the child's future."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "paper_info": {
+    "paper_id": "1",
+    "title": "English Core Paper 1",
+    "class": "XII",
+    "subject": "English Core",
+    "code": "301",
+    "max_marks": 80,
+    "time_allowed": "3 Hours",
+    "total_questions": 13,
+    "academic_session": "2025-26"
+  },
+  "instructions": {
+    "general": [
+      "This question paper has 13 questions. All questions are compulsory.",
+      "This question paper contains three sections: Section A: Reading Skills, Section B: Creative Writing Skills, Section C: Literature.",
+      "Attempt all questions based on specific instructions for each part. Write the correct question number and part thereof in your answer sheet.",
+      "Separate instructions are given with each question/part, wherever necessary.",
+      "Adhere to the prescribed word limit while answering the questions."
+    ]
+  },
+  "sections": {
+    "section_a": {
+      "title": "Reading Skills",
+      "marks": 22,
+      "questions": {
+        "question_1": {
+          "id": "1",
+          "marks": 12,
+          "type": "literary_passage",
+          "passage": {
+            "title": "Great Expectations by Charles Dickens",
+            "word_count": 448,
+            "content": "Ours was the marsh country, down by the river, within twenty miles of the sea. My first most vivid and broad impression of the identity of things seems to me to have been gained on a memorable raw afternoon towards evening. The low leaden line beyond was the river; and that the distant savage lair from which the wind was rushing was the sea; and that the small bundle of shivers growing afraid of it all and beginning to cry, was Pip.\n\n\"Hold your noise!\" cried a terrible voice, as a man started up from among the graves at the side of the bushes. \"Keep still, or I'll make you pay!\"\n\nA fearful man, all in coarse grey, with a great iron on his leg. A man with no hat, and with broken shoes, and with an old rag tied round his head. A man who had been soaked in water, and smothered in mud, limped, and shivered, and glared, and growled; and whose teeth chattered in his head as he seized me.\n\n\"Tell us your name!\" said the man. \"Quick! Give it mouth!\"\n\"Pip. Pip, sir.\"\n\"Show us where you live,\" said the man. \"Point out the place!\"\n\nThe man, after looking at me for a moment, emptied my pockets. There was nothing in them but a piece of bread which he ate ravenously.\n\n\"Now lookee here!\" said the man. \"Where's your mother?\"\n\"There, sir!\" said I.\nHe started, made a short run, and stopped and looked over his shoulder.\n\"Oh!\" said he, coming back. Who's that?\" he asked, pointing.\n\"My sister, sir, —Mrs. Joe Gargery, —wife of Joe Gargery, the blacksmith, sir.\"\n\"Blacksmith, eh?\" said he. And looked down at his leg.\n\nAfter darkly looking at his leg, he came close to me, took me by both arms, and tilted me back as far as he could hold me; so that his eyes looked most powerfully down into mine, and mine looked most helplessly up into his.\n\n\"Now lookee here,\" he said, \"You know what a file and wittles is?\"\n\"Yes, sir.\"\nAfter each question he tilted me over a little more, so as to give me a greater sense of helplessness and danger.\n\"You get me a file.\" He tilted me again. \"And wittles.\" He tilted me again. \"You bring 'em both to me.\"\n\nI was dreadfully frightened, and so giddy that I clung to him with both hands, and said, \"If you would kindly please to let me keep upright, sir, perhaps I shouldn't be sick, and perhaps I could attend more.\"\nHe did. Then, he held me by the arms, in an upright position, and went on with his terms."
+          },
+          "sub_questions": {
+            "i": {
+              "question": "Which textual evidence tells us that Pip was trembling?",
+              "marks": 1,
+              "type": "textual_evidence",
+              "answer": "'...the small bundle of shivers growing afraid of it all...'",
+              "explanation": "The phrase 'small bundle of shivers' directly indicates that Pip was trembling/shivering.",
+              "marking_criteria": {
+                "full_marks": "Exact quote from text that shows trembling/shivering",
+                "partial_marks": "Related evidence but not exact quote",
+                "no_marks": "Incorrect or no textual evidence"
+              }
+            },
+            "ii": {
+              "question": "Complete the following with a suitable reason. The writer refers to the sea as a 'savage lair' in order to tell the reader that ____.",
+              "marks": 1,
+              "type": "inference",
+              "answer": "that the sea is a wild, untamed, and menacing force / contribute to the ominous atmosphere of the scene / amplifying the sense of danger that Pip feels",
+              "explanation": "The metaphor 'savage lair' creates an ominous atmosphere and emphasizes the threatening environment.",
+              "marking_criteria": {
+                "acceptable_answers": [
+                  "the sea is a wild, untamed, and menacing force",
+                  "contribute to the ominous atmosphere of the scene", 
+                  "amplifying the sense of danger that Pip feels"
+                ],
+                "key_concepts": ["menacing", "threatening", "dangerous", "ominous"]
+              }
+            },
+            "iii": {
+              "question": "The writer emphasises Pip's vulnerability in all of the following ways EXCEPT —",
+              "options": {
+                "A": "through the description of the harsh landscape",
+                "B": "via the behaviour of the frightening man", 
+                "C": "through Pip's helplessness and fear",
+                "D": "via Pip's knowledge of the surrounding area"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "D",
+              "explanation": "D) Pip's knowledge of the surrounding area",
+              "detailed_explanation": {
+                "why_D_is_correct": "D is the Key because it refers to qualities that would imply Pip is capable and confident, which contradicts the idea of vulnerability.",
+                "why_others_wrong": {
+                  "A": "speaks of a scene in a place that feels cold, oppressive, and dangerous, which heightens Pip's sense of fear and helplessness",
+                  "B": "creates a feeling of menace due to the man's appearance, reinforcing Pip's fear and powerlessness in the situation",
+                  "C": "shows his terror and helplessness"
+                }
+              },
+              "marking_criteria": {
+                "full_marks": "Only option D selected",
+                "no_marks": "Any other option or multiple options selected"
+              }
+            },
+            "iv": {
+              "question": "What type of statement is made in the phrase \"Keep still, or I'll make you pay!\"?",
+              "options": {
+                "A": "caution",
+                "B": "threat",
+                "C": "prediction", 
+                "D": "announcement"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "B",
+              "explanation": "B) threat",
+              "detailed_explanation": "caution would be advice; prediction would involve stating what will happen in the future and an announcement would be a formal declaration. The Key is b) 'threat' as it directly communicates a potential consequence of harm or punishment.",
+              "marking_criteria": {
+                "full_marks": "Only option B selected",
+                "no_marks": "Any other option or multiple options selected"
+              }
+            },
+            "v": {
+              "question": "Based on his initial appearance, how can we say that the 'fearful man' was in a state of discomfort? (Any one reason)",
+              "marks": 1,
+              "type": "short_answer",
+              "answer": "(Any one) Being soaked in water and smothered in mud, which are physical conditions that typically cause discomfort / Limping, which indicates possible injury or physical strain, contributing to discomfort / Shivering and teeth chattering, which suggests cold or nervousness, both of which are associated with discomfort",
+              "explanation": "Multiple physical indicators show his discomfort and poor condition.",
+              "marking_criteria": {
+                "acceptable_answers": [
+                  "Being soaked in water and smothered in mud",
+                  "Limping", 
+                  "Shivering and teeth chattering"
+                ],
+                "requirement": "Any one reason showing physical discomfort",
+                "key_concepts": ["physical discomfort", "poor condition", "distress"]
+              }
+            },
+            "vi": {
+              "question": "Which one of the following statements best explains the phrase \"Give it mouth!\"?",
+              "options": {
+                "A": "Speak loudly",
+                "B": "Open your mouth wide",
+                "C": "Answer the question"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "C",
+              "explanation": "C) Answer the question",
+              "detailed_explanation": "The phrase is not specifically asking for increased volume or referring to a physical action like opening the mouth. The phrase is urging Pip to give a verbal response.",
+              "marking_criteria": {
+                "full_marks": "Only option C selected",
+                "no_marks": "Any other option selected"
+              }
+            },
+            "vii": {
+              "question": "The man ate the bread 'ravenously'. What does this suggest about his condition?",
+              "marks": 1,
+              "type": "inference",
+              "answer": "It suggests that the man was extremely hungry",
+              "explanation": "Eating 'ravenously' indicates extreme hunger and desperation for food.",
+              "marking_criteria": {
+                "full_marks": "Answer indicating extreme hunger",
+                "acceptable_words": ["hungry", "starving", "famished", "desperate for food"],
+                "partial_marks": "General answer about hunger without emphasis",
+                "no_marks": "Incorrect interpretation"
+              }
+            },
+            "viii": {
+              "question": "What does the man's question, \"Where's your mother?\" and his reaction when Pip points to her suggest about his intentions? (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical",
+              "answer": "It suggests that he is trying to gather information about Pip's family. When he asks about Pip's mother and looks over his shoulder, it shows he is possibly evaluating his surroundings or considering where Pip's family might be, perhaps to assess if anyone is around to stop him and contemplating the best way to proceed without interference.",
+              "explanation": "Shows the man's calculating and suspicious nature in assessing the situation.",
+              "marking_criteria": {
+                "2_marks": "Complete answer covering information gathering + assessment of surroundings + avoiding interference",
+                "1_mark": "Partial answer covering any two elements or good understanding with incomplete expression",
+                "0_marks": "Incorrect interpretation or very incomplete answer",
+                "word_limit": "approximately 40 words"
+              }
+            },
+            "ix": {
+              "question": "How does the man's action of forcing Pip to look up at him contribute to the tension in the scene? (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical", 
+              "answer": "It increases the tension by emphasising the power dynamic between them. Pip is physically tilted backward, which makes him feel small and defenseless. This action not only makes Pip vulnerable but also intensifies the fear he feels. The man's control over Pip's position enhances the sense of intimidation, creating a more fearful and uneasy atmosphere in the scene.",
+              "explanation": "Physical positioning emphasizes power imbalance and psychological intimidation.",
+              "marking_criteria": {
+                "2_marks": "Complete answer covering power dynamic + physical vulnerability + increased fear/intimidation",
+                "1_mark": "Partial answer covering any two elements or good understanding with incomplete expression", 
+                "0_marks": "Incorrect interpretation or very incomplete answer",
+                "word_limit": "approximately 40 words"
+              }
+            },
+            "x": {
+              "question": "Complete the following with the most suitable option. The main idea of the text is ______.",
+              "options": {
+                "A": "Pip's encounter with a frightening man who demands information",
+                "B": "the harshness of Pip's environment and the fear it creates",
+                "C": "Pip's struggle to understand the man's intentions and stay calm",
+                "D": "the importance of family relationships in Pip's life"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "A",
+              "explanation": "A) Pip's encounter with a frightening man who demands information",
+              "detailed_explanation": {
+                "why_A_is_correct": "directly addresses the core of the scene, where the man's aggressive behavior and questioning of Pip create tension and fear",
+                "why_others_wrong": {
+                  "B": "though relevant to the setting, is more of a background detail than the main focus",
+                  "C": "could have been possible, but it is more of an internal reaction of Pip rather than the central idea of the extract",
+                  "D": "doesn't capture the primary conflict of the scene and the family context is just briefly mentioned"
+                }
+              },
+              "marking_criteria": {
+                "full_marks": "Only option A selected",
+                "no_marks": "Any other option or multiple options selected"
+              }
+            }
+          }
+        },
+        "question_2": {
+          "id": "2",
+          "marks": 10,
+          "type": "descriptive_passage",
+          "passage": {
+            "title": "Career Survey Analysis",
+            "content": "A recent survey was conducted among 2,000 college students and young professionals to analyse preferences for different types of jobs, including corporate roles, personal start-ups or family businesses, and service professions (example - defense, nursing, police). The study aimed to identify trends in career aspirations, the factors influencing these preferences, and their implications for workforce planning and education systems...",
+            "word_count": 348
+          },
+          "sub_questions": {
+            "i": {
+              "question": "What was the main purpose of the survey conducted among 2,000 college students and young professionals?",
+              "options": {
+                "A": "To determine the popularity of specific jobs in rural areas versus urban areas",
+                "B": "To explore patterns in career aspirations and the factors influencing them",
+                "C": "To analyse the success rate of startups and family businesses", 
+                "D": "To assess the salary expectations of young professionals opting for jobs"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "B",
+              "explanation": "B) To explore patterns in career aspirations and the factors influencing them",
+              "marking_criteria": {
+                "full_marks": "Only option B selected",
+                "no_marks": "Any other option or multiple options selected"
+              }
+            },
+            "ii": {
+              "question": "What type of sample was used for the survey?",
+              "marks": 1,
+              "type": "comprehension",
+              "answer": "Representative",
+              "explanation": "The survey used a representative sample to capture diverse perspectives.",
+              "marking_criteria": {
+                "full_marks": "Answer indicating representative sample",
+                "acceptable_answers": ["Representative", "Representative sample"],
+                "no_marks": "Any other answer"
+              }
+            },
+            "iii": {
+              "question": "Which career category showed the highest preference among respondents?",
+              "marks": 1,
+              "type": "data_interpretation",
+              "answer": "Start-ups/Family Business",
+              "explanation": "Based on the survey data, start-ups and family businesses showed highest preference.",
+              "visually_impaired_alternative": {
+                "question": "What characteristic allows start-ups to attract young professionals?",
+                "answer": "capturing diverse perspectives from individuals of varying genders, socio-economic statuses, educational backgrounds, and career stages",
+                "marks": 1
+              }
+            },
+            "iv": {
+              "question": "Based on the survey data, which statement is correct about service professions?",
+              "options": {
+                "A": "Service professions are least preferred among all categories",
+                "B": "Service professions show declining interest among youth",
+                "C": "Service professions have a higher percentage of respondents marking them as 'Highly Preferred' compared to corporate jobs",
+                "D": "Service professions require the highest educational qualifications"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "C",
+              "explanation": "C) Service professions have a higher percentage of respondents marking them as 'Highly Preferred' compared to corporate jobs",
+              "visually_impaired_alternative": {
+                "question": "What advantage do start-ups offer to young professionals?",
+                "answer": "A) They allow individuals to independently make decisions and innovate",
+                "marks": 1
+              }
+            },
+            "v": {
+              "question": "Riya prefers job security and structured career growth. Based on the survey findings, explain why a corporate job would be better suited for her compared to a start-up. (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical",
+              "answer": "A corporate job is better suited for Riya because it provides financial stability through a steady salary and offers structured career paths with clear opportunities for growth. Start-ups, on the other hand, often involve higher risks, irregular income, and less defined progression, which may not align with her preference for stability and predictability.",
+              "marking_criteria": {
+                "2_marks": "Complete answer with reason for corporate job (1 mark) + reason why start-up/family business is unsuitable (1 mark)",
+                "1_mark": "Either explains corporate job benefits OR start-up disadvantages but not both",
+                "0_marks": "Incorrect or incomplete answer",
+                "key_points": {
+                  "corporate_advantages": ["financial stability", "steady salary", "structured career paths", "clear growth opportunities"],
+                  "startup_disadvantages": ["higher risks", "irregular income", "less defined progression"]
+                }
+              }
+            },
+            "vi": {
+              "question": "What challenge is highlighted in the survey regarding career guidance?",
+              "options": {
+                "A": "Lack of awareness about different career options",
+                "B": "Limited financial resources for career development",
+                "C": "Insufficient technology for career exploration",
+                "D": "Difficulty in finding experienced professionals to guide career paths"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "D",
+              "explanation": "D) Difficulty in finding experienced professionals to guide career paths",
+              "marking_criteria": {
+                "full_marks": "Only option D selected",
+                "no_marks": "Any other option or multiple options selected"
+              }
+            },
+            "vii": {
+              "question": "Suggest two areas of further research that could enhance career guidance based on the survey findings. (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical",
+              "answer": "Further studies on emerging industries would provide insights into new and evolving career opportunities, helping youth align their aspirations with market demands. Research on technological advancements could highlight tools like virtual training platforms, AI-driven career guidance, and remote work technologies, making career resources more accessible.",
+              "marking_criteria": {
+                "2_marks": "Complete answer with explanation for emerging industries (1 mark) + technological advancements (1 mark)",
+                "1_mark": "Either explains emerging industries OR technological advancements but not both",
+                "0_marks": "Incorrect or incomplete answer",
+                "key_concepts": {
+                  "emerging_industries": ["new career opportunities", "market demands", "evolving sectors"],
+                  "technological_advancements": ["virtual training platforms", "AI-driven guidance", "remote work technologies"]
+                }
+              }
+            },
+            "viii": {
+              "question": "Based on the survey, which factor requires further investigation to understand career preferences better?",
+              "options": {
+                "A": "The impact of family background on career choices",
+                "B": "The impact of gender on career preferences", 
+                "C": "The impact of geographical location on job availability",
+                "D": "The impact of economic conditions on salary expectations"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "B",
+              "explanation": "b) The impact of gender on career preferences",
+              "marking_criteria": {
+                "full_marks": "Only option B selected",
+                "no_marks": "Any other option or multiple options selected"
+              }
+            }
+          }
+        }
+      }
+    },
+    "section_b": {
+      "title": "Creative Writing Skills",
+      "marks": 18,
+      "questions": {
+        "question_3": {
+          "id": "3",
+          "marks": 4,
+          "type": "notice_writing",
+          "word_limit": 50,
+          "options": {
+            "A": {
+              "scenario": "You are Daljeet Kaur, a member of the Teen Well-Being Association, Chandigarh. The Association is planning to organise free pottery classes every Sunday morning at the community hall to encourage creativity among young residents. Write a notice in about 50 words, informing the residents of the event and inviting registrations. Include all the necessary details. Put your notice in a box."
+            },
+            "B": {
+              "scenario": "You are Keerthi, the Secretary of the Environmental Club of ABC School, Madurai. Your school is organising an 'Eco-Fiesta' to raise awareness about environmental issues. Draft a notice in about 50 words, inviting students to participate in various activities and setting up of food stalls. Include all the necessary details. Put your notice in a box."
+            }
+          },
+          "marking_criteria": {
+            "format": {
+              "marks": 1,
+              "requirements": [
+                "Box around the notice",
+                "Name of issuing authority/organisation (top centre)",
+                "NOTICE (centre)",
+                "Date of issue (aligned left)",
+                "Authorisation name, designation & signature (bottom left)"
+              ],
+              "grading": {
+                "full_credit": "All aspects included",
+                "partial_credit": "One-two aspects missing (½ mark)",
+                "no_credit": "More than two aspects missing"
+              }
+            },
+            "content": {
+              "marks": 2,
+              "requirements": "All necessary details included as per scenario"
+            },
+            "language": {
+              "marks": 1,
+              "focus": "Accuracy of Spelling and Grammar"
+            }
+          }
+        },
+        "question_4": {
+          "id": "4",
+          "marks": 4,
+          "type": "invitation_writing",
+          "word_limit": 50,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "type": "formal/third person"
+            },
+            "B": {
+              "type": "formal, first/third person"
+            }
+          }
+        },
+        "question_5": {
+          "id": "5",
+          "marks": 5,
+          "type": "letter_writing",
+          "word_limit": 120,
+          "options": {
+            "A": {
+              "type": "Letter to the Editor",
+              "marking_criteria": {
+                "format": {
+                  "marks": 1,
+                  "note": "use of 'Yours truly' at close"
+                },
+                "organisation_of_ideas": 1,
+                "content": {
+                  "marks": 2,
+                  "requirement": "As per cues + ideas"
+                },
+                "accuracy": 1
+              }
+            },
+            "B": {
+              "type": "Job Application",
+              "marking_criteria": {
+                "format": 1,
+                "organisation_of_ideas": 1,
+                "content": {
+                  "marks": 2,
+                  "requirements": [
+                    "Covering Letter",
+                    "Reference to the advertisement",
+                    "Conveying suitability for the position (as advertised)",
+                    "Submission of application",
+                    "Bio data as separate enclosure",
+                    "Profile of self",
+                    "Educational Qualifications (include advertised requirements)",
+                    "Work experience/s (if relevant)",
+                    "References",
+                    "Any other relevant information"
+                  ]
+                },
+                "accuracy": 1
+              }
+            }
+          }
+        },
+        "question_6": {
+          "id": "6",
+          "marks": 5,
+          "type": "article_or_report_writing",
+          "word_limit": 120,
+          "options": {
+            "article_writing": {
+              "format": {
+                "marks": 1,
+                "requirements": ["Title & By line"]
+              },
+              "organisation_and_content": {
+                "marks": 3,
+                "breakdown": {
+                  "organisation_of_ideas": 1,
+                  "content": 2
+                }
+              },
+              "accuracy": 1
+            },
+            "report_writing": {
+              "format": {
+                "marks": 1,
+                "requirements": [
+                  "Headline & By line",
+                  "Reporting place and date"
+                ]
+              },
+              "organisation_and_content": {
+                "marks": 3,
+                "requirements": [
+                  "Introductory paragraph",
+                  "One or two Body paragraphs including event details",
+                  "Concluding paragraph inclusive of witness accounts"
+                ]
+              },
+              "accuracy": 1
+            }
+          }
+        }
+      }
+    },
+    "section_c": {
+      "title": "Literature",
+      "marks": 40,
+      "questions": {
+        "question_7": {
+          "id": "7",
+          "marks": 6,
+          "type": "poetry_analysis",
+          "instruction": "Read the following extracts and solve ANY ONE of the given two, (A) or (B)",
+          "options": {
+            "A": {
+              "poem": "My Mother at Sixty-six",
+              "extract": "… I saw my mother, beside me, doze, open mouthed, her face ashen like that of a corpse and realised with pain that she was as old as she looked but soon put that thought away, and looked out at Young Trees sprinting, the merry children spilling out of their homes…",
+              "sub_questions": {
+                "i": {
+                  "question": "List any two characteristics of the mother as revealed in the given lines.",
+                  "marks": 1,
+                  "type": "identification",
+                  "answer": "(Any two) she is frail, aged, in a declining physical condition, vulnerable, weakening health, lacks vitality",
+                  "marking_criteria": {
+                    "requirement": "Any two characteristics",
+                    "acceptable_answers": ["frail", "aged", "declining physical condition", "vulnerable", "weakening health", "lacks vitality"]
+                  }
+                },
+                "ii": {
+                  "question": "Complete the following: The realisation that her mother was old came to the poet ______.",
+                  "marks": 1,
+                  "type": "completion",
+                  "answer": "sudden",
+                  "marking_criteria": {
+                    "key_concept": "suddenness of realization"
+                  }
+                },
+                "iii": {
+                  "question": "How does the imagery of 'young trees sprinting' and 'merry children spilling' impact the overall mood of the extract?",
+                  "marks": 1,
+                  "type": "literary_analysis",
+                  "answer": "It introduces a contrast of vitality, joy and exuberance against the sombre and reflective mood created by the imagery of the mother's frailty.",
+                  "marking_criteria": {
+                    "key_concepts": ["contrast", "vitality vs frailty", "mood shift"]
+                  }
+                },
+                "iv": {
+                  "question": "What universal fear does the poet's 'pain' in these lines represent?",
+                  "marks": 1,
+                  "type": "thematic_analysis",
+                  "answer": "(Any one) certainty of mortality / inevitability of death / transient nature of life",
+                  "marking_criteria": {
+                    "acceptable_answers": ["certainty of mortality", "inevitability of death", "transient nature of life"]
+                  }
+                },
+                "v": {
+                  "question": "How does the poet feel when she looks at her mother?",
+                  "options": {
+                    "A": "Filled with nostalgia for childhood memories",
+                    "B": "Grateful for her mother's wisdom and guidance",
+                    "C": "Overwhelmed by a sense of anguish",
+                    "D": "Inspired by her mother's strength and resilience"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "C",
+                  "explanation": "C) Overwhelmed by a sense of anguish"
+                },
+                "vi": {
+                  "question": "Identify the statement that is NOT true:",
+                  "options": {
+                    "A": "The poet's fear of losing her mother is evident in the comparison to a corpse",
+                    "B": "The poet makes exclusive use of melancholic imagery in the given lines",
+                    "C": "The poet's internal conflict between honesty and sensitivity is relatable",
+                    "D": "The extract deals with universal themes of aging and mortality"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "B",
+                  "explanation": "B) The poet makes exclusive use of melancholic imagery in the given lines",
+                  "detailed_explanation": {
+                    "why_B_is_false": "While melancholic imagery ('ashen face' etc.) is present, the poet also uses vibrant imagery ('young trees sprinting' and 'merry children spilling') to create a contrast. Thus, melancholic imagery is not used exclusively.",
+                    "why_others_true": {
+                      "A": "The 'ashen face' compared to a 'corpse' suggests the speaker's fear of mortality and loss",
+                      "C": "The internal conflict of hiding her sadness resonates deeply with human relationships",
+                      "D": "Universal themes such as aging, mortality, and the passage of time make the extract relatable to readers"
+                    }
+                  }
+                }
+              }
+            },
+            "B": {
+              "poem": "Aunt Jennifer's Tigers",
+              "extract": "Aunt Jennifer's fingers fluttering through her wool Find even the ivory needle hard to pull. The massive weight of Uncle's wedding band Sits heavily upon Aunt Jennifer's hand.",
+              "sub_questions": {
+                "i": {
+                  "question": "What does the phrase 'massive weight of Uncle's wedding band' suggest about Aunt Jennifer's married life?",
+                  "marks": 1,
+                  "type": "symbolic_analysis",
+                  "answer": "The phrase suggests that Aunt's life has been filled with struggles shaped by fear, anxiety, and oppression / The phrase signifies her emotional and psychological state, shaped by years of fear and oppression",
+                  "marking_criteria": {
+                    "key_concepts": ["oppression", "struggles", "fear", "anxiety", "emotional burden"]
+                  }
+                },
+                "ii": {
+                  "question": "What will continue even after Aunt Jennifer's death?",
+                  "marks": 1,
+                  "type": "comprehension",
+                  "answer": "…the enduring power of Aunt Jennifer's creative spirit, even after her death",
+                  "marking_criteria": {
+                    "key_concepts": ["creative spirit", "artistic legacy", "tigers", "fearlessness"]
+                  }
+                },
+                "iii": {
+                  "question": "How do the tigers in Aunt Jennifer's panel contrast with her own life?",
+                  "marks": 1,
+                  "type": "contrast_analysis",
+                  "answer": "The tigers in the panel are bold, fearless, and free, symbolising strength, courage, and confidence. In contrast, Aunt's life is marked by fear, struggle, and oppression, which prevents her from living with the same power and freedom that her tigers represent.",
+                  "marking_criteria": {
+                    "required_elements": ["tigers: bold/fearless/free", "aunt: fearful/oppressed", "contrast clearly stated"]
+                  }
+                },
+                "iv": {
+                  "question": "What is the symbol of Aunt Jennifer's oppression?",
+                  "marks": 1,
+                  "type": "symbolic_identification",
+                  "answer": "wedding band on her finger",
+                  "marking_criteria": {
+                    "key_answer": "wedding band/ring"
+                  }
+                },
+                "v": {
+                  "question": "Which option best represents the tigers that Aunt Jennifer creates?",
+                  "options": {
+                    "A": "A caged bird singing despite its confinement",
+                    "B": "A wilted flower struggling to bloom",
+                    "C": "A child playing freely in a park, unburdened by responsibilities",
+                    "D": "An elderly person reminiscing about past glories"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "C",
+                  "explanation": "C) A child playing freely in a park, unburdened by responsibilities"
+                },
+                "vi": {
+                  "question": "What does the line 'When Aunt is dead, her terrified hands will lie Still ringed with ordeals she was mastered by' suggest about art?",
+                  "options": {
+                    "A": "Art reflects the temporary nature of human emotions",
+                    "B": "Art is a timeless expression that outlives its creator, continuing to embody their spirit and desires",
+                    "C": "Art becomes meaningless once the artist is no longer alive",
+                    "D": "Art can only capture the suffering and pain of its creator"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "B",
+                  "explanation": "B) Art is a timeless expression that outlives its creator, continuing to embody their spirit and desires",
+                  "detailed_explanation": "The poet prevails upon the enduring nature of art in this line, as the tigers, symbolising fearlessness and freedom, will persist even after Aunt Jennifer's death. This highlights how art immortalises the creator's emotions, aspirations, and essence, transcending the limitations and constraints of their mortal life."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

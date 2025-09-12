@@ -1,10 +1,10 @@
 import os
+import json
 from typing import List, Optional, Dict, Any
 from dotenv import load_dotenv
 from pathlib import Path
-from pinecone.grpc import PineconeGRPC as Pinecone
-from pinecone import ServerlessSpec
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from pinecone import Pinecone, ServerlessSpec
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader, DirectoryLoader
 from langchain_community.docstore.document import Document
@@ -20,7 +20,7 @@ os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 
 class VectorStoreManager:
     def __init__(self):
-        self.index_name = "ProctorIQ"
+        self.index_name = "proctoriq"  # Lowercase for Pinecone compliance
         self.embedding_model = "sentence-transformers/all-MiniLM-L6-v2"
         self.dimension = 384
         self.chunk_size = 1000  # Increased for exam content
@@ -57,15 +57,15 @@ class VectorStoreManager:
             return None
 
     def load_all_documents(self) -> List[Document]:
-        """Load all exam-related documents from the docs directory"""
+        """Load exam question papers and marking schemes only (NO student answers)"""
         all_docs = []
 
         try:
-            # Define document types for exam automation
+            # Only load official exam documents - NO student answers
             document_patterns = {
                 "SQP*.txt": {"type": "question_paper", "priority": "high"},
                 "MS*.txt": {"type": "marking_scheme", "priority": "high"},
-                "Student_Answer_Paper*.txt": {"type": "student_answer", "priority": "medium"},
+                # Removed student answer patterns - they should NOT be in vector DB
             }
 
             for pattern, metadata in document_patterns.items():
@@ -91,18 +91,16 @@ class VectorStoreManager:
                                 elif "MS" in file_path.name:
                                     paper_num = file_path.name.replace("MS", "").replace(".txt", "")
                                     doc.metadata["paper_number"] = paper_num
-                                elif "Student_Answer_Paper" in file_path.name:
-                                    # Extract paper and variation info
-                                    parts = file_path.name.replace("Student_Answer_Paper", "").replace(".txt", "").split("_")
-                                    if len(parts) >= 2:
-                                        doc.metadata["paper_number"] = parts[0]
-                                        doc.metadata["variation"] = parts[1]
                             
                             all_docs.extend(docs)
                             logger.info(f"✅ Loaded {file_path.name} ({len(docs)} docs)")
                             
                         except Exception as e:
                             logger.error(f"❌ Failed to load {file_path.name}: {e}")
+
+            # Load structured JSON papers (most important for evaluation)
+            structured_docs = self.load_structured_papers()
+            all_docs.extend(structured_docs)
 
             # Log summary
             if all_docs:
@@ -114,6 +112,7 @@ class VectorStoreManager:
                 logger.info(f"📚 Total documents loaded: {len(all_docs)}")
                 for doc_type, count in doc_types.items():
                     logger.info(f"  - {doc_type}: {count} documents")
+                logger.info("🚫 Student answers excluded from vector DB (processed dynamically)")
             else:
                 logger.warning("⚠️ No documents found in the docs directory")
                 
@@ -122,6 +121,92 @@ class VectorStoreManager:
             return []
 
         return all_docs
+
+    def load_structured_papers(self) -> List[Document]:
+        """Load structured JSON papers and convert to documents"""
+        documents = []
+        
+        try:
+            # Look for Paper*_Structured.json files
+            json_files = list(self.data_dir.glob("Paper*_Structured.json"))
+            
+            for file_path in json_files:
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        paper_data = json.load(f)
+                    
+                    # Extract paper number from filename
+                    paper_number = paper_data['paper_info']['paper_id']
+                    
+                    # Create document for paper info
+                    paper_info_text = f"Paper {paper_number}: {paper_data['paper_info']['title']}\n"
+                    paper_info_text += f"Subject: {paper_data['paper_info']['subject']}\n"
+                    paper_info_text += f"Max Marks: {paper_data['paper_info']['max_marks']}\n"
+                    paper_info_text += f"Time: {paper_data['paper_info']['time_allowed']}\n"
+                    paper_info_text += "Instructions: " + " ".join(paper_data['instructions']['general'])
+                    
+                    doc = Document(
+                        page_content=paper_info_text,
+                        metadata={
+                            'type': 'structured_paper_info',
+                            'paper_number': paper_number,
+                            'filename': file_path.name,
+                            'priority': 'high'
+                        }
+                    )
+                    documents.append(doc)
+                    
+                    # Process each section
+                    for section_key, section_data in paper_data['sections'].items():
+                        section_text = f"Section: {section_data['title']} (Marks: {section_data['marks']})\n"
+                        
+                        # Process questions in each section
+                        for question_key, question_data in section_data['questions'].items():
+                            question_text = f"Question {question_data['id']} ({question_data['marks']} marks)\n"
+                            question_text += f"Type: {question_data['type']}\n"
+                            
+                            # Add passage content if exists
+                            if 'passage' in question_data:
+                                passage = question_data['passage']
+                                question_text += f"Passage: {passage['title']}\n"
+                                if 'content' in passage:
+                                    question_text += f"Content: {passage['content']}\n"
+                            
+                            # Add sub-questions and answers
+                            if 'sub_questions' in question_data:
+                                for sub_q_key, sub_q_data in question_data['sub_questions'].items():
+                                    question_text += f"Sub-question {sub_q_key}: {sub_q_data['question']}\n"
+                                    if 'answer' in sub_q_data:
+                                        question_text += f"Answer: {sub_q_data['answer']}\n"
+                                    if 'explanation' in sub_q_data:
+                                        question_text += f"Explanation: {sub_q_data['explanation']}\n"
+                            
+                            doc = Document(
+                                page_content=question_text,
+                                metadata={
+                                    'type': 'structured_question',
+                                    'paper_number': paper_number,
+                                    'section': section_key,
+                                    'question_id': question_data['id'],
+                                    'marks': question_data['marks'],
+                                    'question_type': question_data['type'],
+                                    'filename': file_path.name,
+                                    'priority': 'high'
+                                }
+                            )
+                            documents.append(doc)
+                    
+                    logger.info(f"✅ Loaded structured paper {file_path.name} ({len(documents)} docs so far)")
+                    
+                except Exception as e:
+                    logger.error(f"❌ Failed to load structured paper {file_path.name}: {e}")
+            
+            logger.info(f"📚 Total structured documents: {len(documents)}")
+                    
+        except Exception as e:
+            logger.error(f"❌ Failed to load structured papers: {e}")
+            
+        return documents
 
     def split_documents(self, docs: List[Document]) -> List[Document]:
         splitter = RecursiveCharacterTextSplitter(
@@ -187,28 +272,81 @@ class VectorStoreManager:
             filters={"type": "marking_scheme", "paper_number": paper_number}
         )
 
-    def get_student_answers(self, paper_number: str, variation: Optional[str] = None) -> List[Document]:
-        """Retrieve student answer sheets"""
-        filters = {"type": "student_answer", "paper_number": paper_number}
-        if variation:
-            filters["variation"] = variation
-        
-        return self.query_vector_store(
-            query="student answer",
-            filters=filters
-        )
+    # NOTE: Student answers should NOT be stored in vector DB
+    # They are processed dynamically during evaluation
+    # def get_student_answers(self, paper_number: str, variation: Optional[str] = None) -> List[Document]:
+    #     """This method is disabled - student answers should be processed dynamically, not stored in vector DB"""
+    #     logger.warning("🚫 Student answers should not be stored in vector database")
+    #     return []
 
     def search_relevant_context(self, question: str, paper_number: Optional[str] = None) -> List[Document]:
-        """Search for relevant context for question evaluation"""
+        """Search for relevant context for question evaluation (official documents only)"""
+        # Start with base filter to exclude student answers
         filters = {}
+        
+        # Note: We've already excluded student answers from vector store loading
+        # This ensures only official documents (QP, MS, structured JSONs) are searched
+        
         if paper_number:
             filters["paper_number"] = paper_number
         
         return self.query_vector_store(
             query=question,
-            k=5,
+            k=3,  # Reduced from 5 to 3 for faster retrieval
             filters=filters if filters else None
         )
+
+    def search_batch_context(self, questions: List[str], paper_number: Optional[str] = None) -> Dict[str, List[Document]]:
+        """
+        Optimized batch search for multiple questions to reduce evaluation time
+        
+        Args:
+            questions: List of question texts
+            paper_number: Optional paper number to filter results
+            
+        Returns:
+            Dictionary mapping question text to relevant documents
+        """
+        # Create a combined query from all questions for initial broad search
+        combined_query = " ".join(questions[:3])  # Use first 3 questions to avoid overly long query
+        
+        filters = {}
+        if paper_number:
+            filters["paper_number"] = paper_number
+        
+        # Get a broader set of potentially relevant documents
+        all_docs = self.query_vector_store(
+            query=combined_query,
+            k=8,  # Get more docs to distribute among questions
+            filters=filters if filters else None
+        )
+        
+        # Distribute documents to questions based on relevance
+        result = {}
+        for question in questions:
+            # Simple keyword matching for quick distribution
+            question_docs = []
+            for doc in all_docs:
+                doc_text = doc.page_content.lower()
+                question_lower = question.lower()
+                
+                # Check for keyword overlap (more lenient)
+                question_words = set(question_lower.split())
+                doc_words = set(doc_text.split())
+                overlap = len(question_words.intersection(doc_words))
+                
+                if overlap > 1:  # Reduced from 2 to 1 for more matches
+                    question_docs.append(doc)
+                    if len(question_docs) >= 2:  # Limit to 2 docs per question
+                        break
+            
+            # Fallback: if no specific matches, give each question some general docs
+            if not question_docs and all_docs:
+                question_docs = all_docs[:2]  # Give first 2 docs as fallback
+            
+            result[question] = question_docs
+        
+        return result
 
 
 if __name__ == "__main__":
@@ -222,20 +360,28 @@ if __name__ == "__main__":
     if success:
         print("✅ Vector store setup completed successfully.")
         
+        # Wait for index to sync
+        import time
+        print("⏳ Waiting for index synchronization...")
+        time.sleep(3)
+        
         # Test queries
         print("\n🔍 Testing vector store queries...")
         
         # Test getting question paper
         qp_docs = manager.get_question_paper("1")
         print(f"📄 Found {len(qp_docs)} question paper documents for Paper 1")
+        if qp_docs:
+            print(f"   Sample: {qp_docs[0].metadata.get('filename', 'unknown')}")
         
         # Test getting marking scheme
         ms_docs = manager.get_marking_scheme("1")
         print(f"📋 Found {len(ms_docs)} marking scheme documents for Paper 1")
+        if ms_docs:
+            print(f"   Sample: {ms_docs[0].metadata.get('filename', 'unknown')}")
         
-        # Test getting student answers
-        sa_docs = manager.get_student_answers("1", "Variation1")
-        print(f"✍️ Found {len(sa_docs)} student answer documents for Paper 1 Variation 1")
+        # NOTE: Student answers are NOT stored in vector DB - processed dynamically
+        print("🚫 Student answers excluded from vector store (processed during evaluation)")
         
         # Test context search
         context_docs = manager.search_relevant_context(
@@ -243,6 +389,8 @@ if __name__ == "__main__":
             paper_number="1"
         )
         print(f"🔎 Found {len(context_docs)} relevant context documents")
+        if context_docs:
+            print(f"   Sample: {context_docs[0].metadata.get('filename', 'unknown')} ({context_docs[0].metadata.get('type', 'unknown')})")
         
     else:
         print("❌ Vector store setup failed.")

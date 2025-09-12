@@ -1,0 +1,39 @@
+# Core ProctorIQ Dependencies
+# OpenAI for exam evaluation
+openai>=1.0.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Vector Database (Pinecone with gRPC support)
+pinecone-client[grpc]>=3.0.0
+
+# LangChain for document processing
+langchain>=0.1.0
+langchain-community>=0.0.1
+langchain-pinecone>=0.0.1
+langchain-huggingface>=0.0.1
+
+# Embeddings
+sentence-transformers>=2.2.0
+
+# Logging
+loguru>=0.7.0
+
+# FastAPI and Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Data validation
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# File upload and processing
+pillow>=10.0.0
+pytesseract>=0.3.10
+pymupdf>=1.23.0
+python-docx>=1.1.0
+
+# Additional dependencies
+aiofiles>=23.0.0

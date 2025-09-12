@@ -1,0 +1,413 @@
+# 🚀 ProctorIQ - Comprehensive .gitignore
+
+# ==========================================
+# 🐍 Python
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ==========================================
+# ⚛️ React / Node.js
+# ==========================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# React build output
+/frontend/build/
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# ==========================================
+# 🔑 Environment & Secrets
+# ==========================================
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# API Keys and secrets
+*.key
+*.pem
+config.json
+secrets.json
+
+# ==========================================
+# 📁 Project Specific - ProctorIQ
+# ==========================================
+
+# Upload directories (contains student data)
+exam_automator/backend/uploads/
+uploads/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Log files
+*.log
+logs/
+
+# AI Model cache
+.cache/
+model_cache/
+
+# Vector database local files
+*.index
+*.faiss
+
+# OCR temporary files
+ocr_temp/
+
+# Generated reports
+reports/
+*.pdf
+
+# Embeddings cache
+embeddings_cache/
+
+# ==========================================
+# 🗃️ Database & Data
+# ==========================================
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+*.dump
+
+# ==========================================
+# 💻 Operating System
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# 🛠️ Development Tools
+# ==========================================
+
+# Jest coverage
+coverage/
+
+# ESLint cache
+.eslintcache
+
+# Prettier cache
+.prettiercache
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Profiling
+.prof
+
+# ==========================================
+# 📦 Package Managers
+# ==========================================
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# pnpm
+.pnpm-debug.log*
+
+# ==========================================
+# 🔧 Build Tools
+# ==========================================
+
+# Webpack
+.webpack/
+
+# Parcel
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Gatsby
+.cache/
+public/
+
+# Storybook
+.out
+.storybook-out
+
+# Rollup
+.rollup.cache
+
+# ==========================================
+# ☁️ Cloud & Deployment
+# ==========================================
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# AWS
+.aws/
+
+# Docker
+.dockerignore
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# ==========================================
+# 📝 Documentation
+# ==========================================
+
+# Sphinx documentation
+docs/_build/
+
+# MkDocs
+/site
+
+# ==========================================
+# 🎯 Temporary & Cache Files
+# ==========================================
+
+# General temporary files
+*.swp
+*.swo
+*~
+.tmp/
+temp/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Archive files (unless specifically needed)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ==========================================
+# 🚫 Never Commit These
+# ==========================================
+
+# Student answer sheets and personal data
+**/student_answers/
+**/student_data/
+**/answer_sheets/
+
+# Production configurations
+prod.env
+production.json
+staging.json
+
+# License keys
+license.key
+*.license
+
+# Security certificates
+*.crt
+*.csr

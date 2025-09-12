@@ -1,0 +1,554 @@
+{
+  "paper_info": {
+    "paper_id": "2",
+    "title": "English Core Paper 2",
+    "class": "XII",
+    "subject": "English Core",
+    "code": "301",
+    "max_marks": 80,
+    "time_allowed": "3 Hours",
+    "total_questions": 13,
+    "academic_session": "2024-25"
+  },
+  "instructions": {
+    "general": [
+      "This question paper has 13 questions. All questions are compulsory.",
+      "This question paper contains three sections: Section A: Reading Skills, Section B: Creative Writing Skills, Section C: Literature.",
+      "Attempt all questions based on specific instructions for each part. Write the correct question number and part thereof in your answer sheet.",
+      "Separate instructions are given with each question/part, wherever necessary.",
+      "Adhere to the prescribed word limit while answering the questions."
+    ]
+  },
+  "sections": {
+    "section_a": {
+      "title": "Reading Skills",
+      "marks": 22,
+      "questions": {
+        "question_1": {
+          "id": "1",
+          "marks": 12,
+          "type": "descriptive_passage",
+          "passage": {
+            "title": "Digital Connectivity and Human Connection",
+            "word_count": 421,
+            "content": "In a room filled with people, each face illuminated by the soft glow of their smartphones, moments drift away like autumn leaves in the wind. The constant hum of notifications fills the air, punctuating conversations like an incessant drumbeat. Every vibration or ping sends fingers flying to screens, a response ingrained by years of digital conditioning. The once reliable tick-tock of analog timepieces has been overshadowed by the constant flicker of notifications on the wrist watch, blurring the boundaries between the virtual and the real.\n\nAnxiety gnaws at the edges of consciousness when the phone is out of reach, a phantom limb syndrome that leaves us feeling incomplete without our digital appendage. The fear of missing out permeates every moment spent away from the screen, driving us to constantly check for updates and notifications.\n\nThumbs move with the speed and precision of skillful pianists, tapping out messages and scrolling through feeds with practiced ease. Yet amidst the flurry of activity, the true rhythm of life remains unheard, drowned out by the dissonance of digital noise. The weight of constant connectivity forms a hunch upon our shoulders, a physical manifestation of the burden we carry in an age of information overload. Our minds are perpetually on high alert, scanning for the next wave of excitement that comes with each like, share, or comment.\n\nAnd yet, for all our efforts to stay connected, we find ourselves increasingly isolated in a sea of digital faces. Genuine connections are fleeting, drowned out by the constant clamour for attention. In the pursuit of digital validation, we sacrifice the wealth of lived experience, trading meaningful moments for fleeting glimpses of connection. The true essence of life lies not in the pixels on a screen, but in the depth of human connection and the richness of shared experiences.\n\nAs we navigate this brave new world of constant connectivity, let us not forget the value of presence and the beauty of being fully engaged in the moments that matter most. For in the end, it is not the number of likes or followers that defines us, but the depth of our connections and the richness of our experiences that truly matter."
+          },
+          "sub_questions": {
+            "i": {
+              "question": "According to paragraph 1, what effect do smartphone notifications have on the people in the room?",
+              "marks": 1,
+              "type": "comprehension",
+              "answer": "They lead to instant interruptions in conversations",
+              "explanation": "Every vibration or ping sends fingers flying to screens / They interrupt conversations like an incessant drumbeat / They cause an immediate response ingrained by digital conditioning",
+              "marking_criteria": {
+                "full_marks": "Answer indicating instant interruptions/disruptions to conversations",
+                "acceptable_answers": [
+                  "instant interruptions in conversations",
+                  "disrupting conversations",
+                  "immediate response to check screens",
+                  "fingers flying to screens"
+                ],
+                "note": "language/expression may vary but the idea should remain relevant"
+              }
+            },
+            "ii": {
+              "question": "How does the author use the metaphor of 'autumn leaves in the wind' to interpret the passing of time in the setting described?",
+              "marks": 1,
+              "type": "metaphor_analysis",
+              "answer": "It illustrates how moments are fleeting and unnoticed, lost amid the distractions of digital interactions / it illustrates how easily significant moments can drift away when overshadowed by the focus on technology",
+              "explanation": "The metaphor emphasizes how precious moments slip away while people are distracted by their devices.",
+              "marking_criteria": {
+                "full_marks": "Answer explaining fleeting/unnoticed moments lost to digital distractions",
+                "key_concepts": ["fleeting", "unnoticed", "lost", "drift away", "distracted by technology"],
+                "note": "language/expression may vary but the idea should remain relevant"
+              }
+            },
+            "iii": {
+              "question": "The phrase 'a phantom limb syndrome that leaves us feeling incomplete without our digital appendage' suggests that just as an amputee might feel pain in a limb they no longer have, individuals can feel a sense of loss or incompleteness when they are separated from their digital devices. Choose the correct response: The concern this analogy points towards is about ______.",
+              "options": {
+                "A": "a deep (psychological) dependence on technology for a sense of wholeness or connection",
+                "B": "excessive physical damage that can be caused due to constant use of digital devices"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "A",
+              "explanation": "A. a deep (psychological) dependence on technology for a sense of wholeness or connection",
+              "marking_criteria": {
+                "full_marks": "Only option A selected",
+                "no_marks": "Option B or multiple options selected"
+              }
+            },
+            "iv": {
+              "question": "Complete the following suitably with ONE advantage, with reference to paragraph 2. Designating specific hours each day to intentionally avoid checking digital devices can help ______.",
+              "marks": 1,
+              "type": "inference",
+              "answer": "reduce the anxiety associated with the need to constantly be connected",
+              "explanation": "Based on paragraph 2's description of anxiety and FOMO, digital detox would address these issues.",
+              "marking_criteria": {
+                "full_marks": "Answer indicating reduction of anxiety/FOMO/constant connectivity pressure",
+                "acceptable_answers": [
+                  "reduce anxiety",
+                  "overcome fear of missing out", 
+                  "break constant connectivity pressure",
+                  "reduce need to constantly check devices"
+                ]
+              }
+            },
+            "v": {
+              "question": "Why does the writer refer to digital noise as 'dissonance' in paragraph 3?",
+              "options": {
+                "A": "It creates a jarring and chaotic environment that disrupts focus",
+                "B": "It contributes to a sense of overload, overwhelming the senses",
+                "C": "It interferes with our ability to engage with meaningful aspects of our life",
+                "D": "It induces stress by interrupting with regular updates about the device"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "C",
+              "explanation": "C. It interferes with our ability to engage with meaningful aspects of our life",
+              "marking_criteria": {
+                "full_marks": "Only option C selected",
+                "no_marks": "Any other option or multiple options selected"
+              }
+            },
+            "vi": {
+              "question": "Provide ONE textual evidence with reference to paragraph 3, to prove the following: The need to be perpetually engaged with digital notifications manifests in the body.",
+              "marks": 1,
+              "type": "textual_evidence",
+              "answer": "Yes it does - develop a hunch / mind is constantly alert (any one)",
+              "explanation": "The weight of constant connectivity forms a hunch upon our shoulders / Our minds are perpetually on high alert",
+              "marking_criteria": {
+                "acceptable_evidence": [
+                  "The weight of constant connectivity forms a hunch upon our shoulders",
+                  "Our minds are perpetually on high alert",
+                  "develop a hunch",
+                  "mind is constantly alert"
+                ],
+                "requirement": "Any one piece of textual evidence showing physical manifestation"
+              }
+            },
+            "vii": {
+              "question": "In the line, 'Yet amidst the flurry of activity, the true rhythm of life remains unheard…,' what does the phrase 'true rhythm of life' refer to? (Paragraphs 3-4)",
+              "marks": 2,
+              "type": "interpretation",
+              "answer": "The phrase refers to the natural, meaningful, and often quieter moments that make up human existence and relationships—those that occur away from the digital chaos. The writer draws our attention towards the genuine life experiences, such as face-to-face conversations, quiet contemplation, enjoying nature, and real-world interactions, that are overlooked or drowned out by the constant noise of digital activity.",
+              "explanation": "Context from paragraphs 3-4 shows contrast between digital noise and authentic life experiences.",
+              "marking_criteria": {
+                "2_marks": "Complete answer covering natural/meaningful moments + genuine experiences + contrast with digital chaos",
+                "1_mark": "Partial answer covering any two elements or good understanding with incomplete expression",
+                "0_marks": "Incorrect interpretation or very incomplete answer",
+                "note": "language/expression may vary but the idea should remain relevant"
+              }
+            },
+            "viii": {
+              "question": "Complete the analogy with ONE word from paragraph 4. whisper: quietly: _______: loudly",
+              "options": {
+                "A": "validation",
+                "B": "fleeting", 
+                "C": "essence",
+                "D": "clamour"
+              },
+              "marks": 1,
+              "type": "analogy",
+              "answer": "D",
+              "explanation": "D. clamour",
+              "marking_criteria": {
+                "full_marks": "Only option D selected",
+                "no_marks": "Any other option selected"
+              }
+            },
+            "ix": {
+              "question": "What is the central message the author conveys about digital connectivity in paragraph 5?",
+              "marks": 1,
+              "type": "central_theme",
+              "answer": "A. Despite the intent to connect more effectively, the result is the opposite",
+              "explanation": "The author emphasizes that true fulfillment comes from being present and fully engaged in meaningful moments, not from digital validation.",
+              "detailed_explanation": "Option B is satire, C is hyperbole and D is metaphor - but A captures the central irony",
+              "marking_criteria": {
+                "full_marks": "Answer showing irony/contradiction between intent and result of digital connectivity",
+                "key_concepts": ["irony", "opposite effect", "failed connection despite technology"]
+              }
+            },
+            "x": {
+              "question": "What are the benefits and challenges of using survey outcomes for health interventions? (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical",
+              "answer": "Benefits: Survey outcomes can offer a detailed understanding of the specific needs and preferences of various demographic groups, which can enhance the effectiveness of health interventions by making them more targeted and relevant. Additionally, using these data-driven insights can foster a sense of collaboration among stakeholders, promoting a unified approach towards health and sustainability. Challenges: Relying on survey outcomes may present challenges such as the risk of biases in the data collection process, which can twist results and lead to ineffective interventions. There's also the issue of survey fatigue among participants, potentially reducing engagement and the accuracy of the data gathered. Moreover, translating survey findings into practical interventions requires resources and continuous stakeholder commitment, which might not always be feasible.",
+              "marking_criteria": {
+                "2_marks": "Two points elaborated for either benefits OR challenges (or one point each)",
+                "1_mark": "One clear point explained for benefits or challenges",
+                "0_marks": "Vague or incorrect answer",
+                "structure": "2 points to be elaborated for either benefits or challenges"
+              }
+            }
+          }
+        },
+        "question_2": {
+          "id": "2", 
+          "marks": 10,
+          "type": "descriptive_passage",
+          "passage": {
+            "title": "Reading Habits Survey",
+            "content": "Based on the data from a recent survey of 1,000 students aged 12-18 across urban and rural areas examining snacking habits and health implications...",
+            "charts_tables": ["Reading preferences by age group", "Digital vs Physical book preferences", "Time spent reading per week"]
+          },
+          "sub_questions": {
+            "i": {
+              "question": "What does the survey data reveal about how busy daily routines influence snacking choices?",
+              "marks": 1,
+              "type": "data_interpretation",
+              "answer": "how busy daily routines influence people to opt for quick and convenient eating options, often at the expense of nutritional value",
+              "marking_criteria": {
+                "full_marks": "Answer indicating preference for quick/convenient options due to busy routines",
+                "key_concepts": ["busy routines", "quick options", "convenience", "nutritional compromise"]
+              }
+            },
+            "ii": {
+              "question": "What was the primary purpose of including fresh fruits in the snacking survey?",
+              "marks": 1,
+              "type": "comprehension",
+              "answer": "A. Primary purpose",
+              "marking_criteria": {
+                "full_marks": "Answer indicating primary purpose of the study",
+                "acceptable_responses": ["Primary purpose", "Main objective", "Core aim"]
+              }
+            },
+            "iii": {
+              "question": "Identify TWO reasons why fresh fruits were specifically included in this snacking survey. (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical",
+              "answer": "a) Health focus, as fruits are widely recognised for their health benefits, and this aligns with the study's goal to analyse snacking habits and their implications for health (making fresh fruits a relevant choice for understanding healthy snacking behaviours). b) Comparative analysis, as the study aims to compare the health implications of seasonal fruits versus packaged snacks. Including fresh fruits allows researchers to directly evaluate preferences between natural, healthier choices and processed, potentially less healthy alternatives.",
+              "marking_criteria": {
+                "2_marks": "Two clear reasons provided with explanation",
+                "1_mark": "One clear reason or two reasons without proper explanation",
+                "0_marks": "Incorrect or very incomplete answer",
+                "key_points": {
+                  "health_focus": "fruits recognized for health benefits",
+                  "comparative_analysis": "natural vs processed food comparison"
+                }
+              }
+            },
+            "iv": {
+              "question": "Based on the survey data, match the demographic groups with their primary motivating factors for snacking choices.",
+              "marks": 1,
+              "type": "matching",
+              "answer": "Influence – sentence 1 ; Motivation – sentence 2",
+              "marking_criteria": {
+                "full_marks": "Correct matching of influence and motivation factors",
+                "partial_marks": "One correct match",
+                "no_marks": "Incorrect matching"
+              }
+            },
+            "v": {
+              "question": "Which demographic group shows the most health-conscious snacking preferences according to the survey?",
+              "options": {
+                "A": "Children - priority on taste",
+                "B": "Teenagers - convenience and peer influence", 
+                "C": "Young adults - balance of health and convenience",
+                "D": "Seema - teenager (taste and convenience) ; Mohan - elderly(health, digestive ease) ; Arindam -young adult (health and convenience )"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "D",
+              "explanation": "D. Seema - teenager (taste and convenience) ; Mohan - elderly(health, digestive ease) ; Arindam -young adult (health and convenience )",
+              "marking_criteria": {
+                "full_marks": "Only option D selected showing demographic preferences",
+                "no_marks": "Any other option selected"
+              }
+            },
+            "vi": {
+              "question": "Why do elderly participants show a stronger preference for fresh fruits compared to other age groups?",
+              "marks": 1,
+              "type": "inference",
+              "answer": "Due to their increased health needs and focus on foods that are easier to digest and nutritionally beneficial",
+              "marking_criteria": {
+                "full_marks": "Answer indicating health needs and digestive concerns of elderly",
+                "key_concepts": ["health needs", "digestive ease", "nutritional benefits", "age-related preferences"]
+              }
+            },
+            "vii": {
+              "question": "How can targeted interventions based on demographic preferences improve overall health outcomes? (Answer in about 40 words)",
+              "marks": 2,
+              "type": "analytical",
+              "answer": "Targeted interventions can effectively address specific health needs by focusing on the unique factors influencing each demographic's snacking choices. For example, educational campaigns for parents can foster early healthy eating habits in children, while initiatives for teenagers can reduce the impact of advertising and peer pressure, promoting wiser food choices. Also, ensuring that middle-aged and older adults have access to fresh produce supports ongoing health maintenance, directly contributing to overall improved health outcomes across the lifespan.",
+              "marking_criteria": {
+                "2_marks": "Complete explanation of targeted interventions with specific examples for different demographics",
+                "1_mark": "General explanation of targeted interventions or specific examples without complete rationale",
+                "0_marks": "Vague or incorrect answer",
+                "key_elements": ["demographic-specific approaches", "educational campaigns", "access to fresh produce", "health outcomes"]
+              }
+            },
+            "viii": {
+              "question": "What is the ultimate goal of implementing snacking habit interventions based on this survey?",
+              "options": {
+                "A": "Reducing healthcare costs",
+                "B": "Building healthier communities",
+                "C": "Increasing fruit consumption",
+                "D": "Changing food industry practices"
+              },
+              "marks": 1,
+              "type": "multiple_choice",
+              "answer": "B",
+              "explanation": "B. Building healthier communities",
+              "marking_criteria": {
+                "full_marks": "Only option B selected",
+                "no_marks": "Any other option selected"
+              }
+            }
+          }
+        }
+      }
+    },
+    "section_b": {
+      "title": "Creative Writing Skills", 
+      "marks": 18,
+      "questions": {
+        "question_3": {
+          "id": "3",
+          "marks": 4,
+          "type": "notice_writing",
+          "word_limit": 50,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "scenario": "Notice for school debate competition on environmental conservation"
+            },
+            "B": {
+              "scenario": "Notice for blood donation camp organized by school health club"
+            }
+          }
+        },
+        "question_4": {
+          "id": "4", 
+          "marks": 4,
+          "type": "invitation_writing",
+          "word_limit": 50,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "type": "Card type formal/third person/centre aligned",
+              "scenario": "Invitation to Annual Cultural Fest"
+            },
+            "B": {
+              "type": "Letter type- formal, first/third person",
+              "scenario": "Invitation to Book Launch Event"
+            }
+          }
+        },
+        "question_5": {
+          "id": "5",
+          "marks": 5,
+          "type": "letter_writing",
+          "word_limit": 120,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "organisation": 1,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "scenario": "Letter to newspaper editor about increasing pollution in city"
+            },
+            "B": {
+              "scenario": "Letter to Principal requesting additional sports facilities"
+            }
+          }
+        },
+        "question_6": {
+          "id": "6",
+          "marks": 5,
+          "type": "article_writing", 
+          "word_limit": 120,
+          "marking_criteria": {
+            "format": 1,
+            "content": 2,
+            "organisation": 1,
+            "accuracy": 1
+          },
+          "options": {
+            "A": {
+              "scenario": "Article on 'The Impact of Social Media on Teenagers'",
+              "value_points": [
+                "Cultural heritage provides a strong sense of identity, helping young people connect with their roots and understand how historical influences shape their personal and community identities",
+                "Exposure to one's own and other cultures promotes tolerance and appreciation, which are vital in today's globalised society. This helps youths navigate diverse social environments with respect and empathy",
+                "Engaging with traditional arts, crafts, and practices can inspire creativity and innovation among youths, allowing them to reinterpret cultural expressions in ways that resonate with contemporary life",
+                "Active participation in cultural festivals, rituals, and community events strengthens bonds among community members and enhances social cohesion, making cultural heritage a pivotal part of daily life for youths",
+                "Incorporating cultural studies in education can increase awareness and pride among young people about their heritage, encouraging them to become advocates and preservers of their traditions",
+                "By using technology to create appealing and accessible cultural content, such as virtual museum tours, digital storytelling, and social media campaigns, youths can be engaged with their heritage in formats they find relatable and exciting"
+              ]
+            },
+            "B": {
+              "scenario": "Article on 'Benefits of Reading Books in Digital Age'",
+              "note": "Cues lead to the eliciting of relevant response points"
+            }
+          }
+        }
+      }
+    },
+    "section_c": {
+      "title": "Literature",
+      "marks": 40,
+      "questions": {
+        "question_7": {
+          "id": "7",
+          "marks": 6,
+          "type": "poetry_analysis",
+          "instruction": "Read the following extracts and answer the questions for any one of the given two-A or B",
+          "options": {
+            "A": {
+              "poem": "Keeping Quiet",
+              "extract": "Now we will count to twelve and we will all keep still for once on the face of the earth, let's not speak in any language; let's stop for one second, and not move our arms so much.",
+              "sub_questions": {
+                "i": {
+                  "question": "What does the poet mean by 'gaining victory with no survivors'?",
+                  "marks": 1,
+                  "type": "interpretation",
+                  "answer": "Gaining victory with no survivors",
+                  "explanation": "The poet refers to destructive victories where nothing is left alive",
+                  "marking_criteria": {
+                    "key_concept": "destructive nature of modern victories/wars"
+                  }
+                },
+                "ii": {
+                  "question": "What kind of moment does the poet envision when everyone keeps still?",
+                  "options": {
+                    "A": "A moment of confusion and chaos",
+                    "B": "A moment of competitive silence",
+                    "C": "A moment of unity and peaceful reflection",
+                    "D": "A moment of individual meditation"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "C",
+                  "explanation": "C. A moment of unity and peaceful reflection"
+                },
+                "iii": {
+                  "question": "What does the 'moment of silence' represent for those engaged in destructive activities?",
+                  "marks": 1,
+                  "type": "symbolic_analysis",
+                  "answer": "a potential for change and renewal / a moment of pause and reflection / an act of cleansing of their actions /embracing a peaceful existence/ the possibility of transformation",
+                  "marking_criteria": {
+                    "acceptable_answers": [
+                      "potential for change and renewal",
+                      "moment of pause and reflection", 
+                      "act of cleansing actions",
+                      "embracing peaceful existence",
+                      "possibility of transformation"
+                    ]
+                  }
+                },
+                "iv": {
+                  "question": "Complete the following: The poet ______ wars and conflicts.",
+                  "marks": 1,
+                  "type": "completion",
+                  "answer": "condemns",
+                  "marking_criteria": {
+                    "key_concept": "poet's stance against wars and conflicts"
+                  }
+                },
+                "v": {
+                  "question": "Assertion: The poem advocates for complete inaction and permanent silence. Reason: The poet believes that all human activity leads to destruction.",
+                  "options": {
+                    "A": "Both assertion and reason are true, and reason is correct explanation",
+                    "B": "Both the assertion and the reason are true, but the reason is not the correct explanation of the assertion",
+                    "C": "Assertion is true but reason is false",
+                    "D": "Assertion is false but reason is true"
+                  },
+                  "marks": 1,
+                  "type": "assertion_reason",
+                  "answer": "B",
+                  "explanation": "B. Both the assertion and the reason are true, but the reason is not the correct explanation of the assertion"
+                },
+                "vi": {
+                  "question": "How can this poem's message be applied to contemporary global issues?",
+                  "marks": 1,
+                  "type": "application",
+                  "answer": "Global leaders and communities can work toward more sustainable and peaceful solutions – Can be used to advocate for non-violent resolutions / peace negotiations in contemporary conflicts / Can be used to promote dialogue and understanding over aggression and warfare",
+                  "marking_criteria": {
+                    "key_concepts": ["sustainable solutions", "non-violent resolutions", "peace negotiations", "dialogue over aggression"]
+                  }
+                }
+              }
+            },
+            "B": {
+              "poem": "A Thing of Beauty", 
+              "extract": "A thing of beauty is a joy for ever: Its loveliness increases; it will never Pass into nothingness; but still will keep A bower quiet for us, and a sleep Full of sweet dreams, and health, and quiet breathing.",
+              "sub_questions": {
+                "i": {
+                  "question": "What does the poet mean by 'enforcing benefits'?",
+                  "marks": 1,
+                  "type": "interpretation",
+                  "answer": "enforcing benefits",
+                  "marking_criteria": {
+                    "key_concept": "forcing positive effects/advantages"
+                  }
+                },
+                "ii": {
+                  "question": "What kind of help does beauty provide according to the extract?",
+                  "options": {
+                    "A": "Coordinated help",
+                    "B": "Temporary relief",
+                    "C": "Physical assistance", 
+                    "D": "Financial support"
+                  },
+                  "marks": 1,
+                  "type": "multiple_choice",
+                  "answer": "A",
+                  "explanation": "A. Coordinated help"
+                },
+                "iii": {
+                  "question": "What does the phrase 'traditional sleeping patterns' refer to in the context?",
+                  "marks": 1,
+                  "type": "contextual_interpretation",
+                  "answer": "the traditional and longstanding sleeping patterns and nighttime rituals that have been part of the rural community's lifestyle for generations (deeply rooted cultural practices)",
+                  "detailed_explanation": "The speaker suggests that the modern practices, possibly influenced by external forces such as urbanisation or industrialisation, disrupt the natural sleep patterns of the rural inhabitants – dilute their time-tested ways"
+                },
+                "iv": {
+                  "question": "What literary device is primarily used in this extract?",
+                  "marks": 1,
+                  "type": "literary_device",
+                  "answer": "irony",
+                  "marking_criteria": {
+                    "key_concept": "ironic contrast between appearance and reality"
+                  }
+                },
+                "v": {
+                  "question": "Assertion: The poet criticizes modern interference in rural life. Reason: External forces bring only positive changes to rural communities.",
+                  "options": {
+                    "A": "Both assertion and reason are true",
+                    "B": "Assertion is true but reason is false", 
+                    "C": "Both assertion and reason are false",
+                    "D": "The assertion is false, but the reason is true"
+                  },
+                  "marks": 1,
+                  "type": "assertion_reason", 
+                  "answer": "D",
+                  "explanation": "D. The assertion is false, but the reason is true. (Correct assertion - The poet criticizes the way the rural poor are treated by benefactors, suggesting it dulls their senses : 'soothe them out of their wits')"
+                },
+                "vi": {
+                  "question": "What advice would you give to rural communities based on this extract?",
+                  "marks": 1,
+                  "type": "advisory",
+                  "answer": "Be wary of involvements by outsiders that might appear benevolent but could ultimately undermine your autonomy and dull your critical thinking abilities",
+                  "marking_criteria": {
+                    "note": "language/expression may vary but the idea should remain relevant",
+                    "key_concepts": ["caution about outsiders", "protecting autonomy", "maintaining critical thinking"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
